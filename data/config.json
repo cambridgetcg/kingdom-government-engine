@@ -1,0 +1,77 @@
+{
+  "schema": "kingdom.government-engine-config/0.1",
+  "contractVersion": "0.1.0",
+  "title": "Government Engine: United Kingdom",
+  "asOf": "2026-08-21",
+  "jurisdiction": "United Kingdom",
+  "urls": {
+    "canonical": "https://thekingdom.dev/government/uk-government-engine-2026-08-21.json",
+    "mutableAlias": "https://thekingdom.dev/government.json",
+    "guide": "https://thekingdom.dev/UK-GOVERNMENT-ENGINE-v0.1.md",
+    "human": "https://thekingdom.dev/government-engine/",
+    "producer": "https://github.com/cambridgetcg/kingdom-government-engine/tree/v0.1.0"
+  },
+  "authorship": {
+    "compiledBy": "codex-assisted-publication",
+    "exactTextHumanReviewed": false,
+    "humanDirectionRecorded": true,
+    "origin": "maintainer-authorized-assisted-publication"
+  },
+  "boundaries": {
+    "accountAccess": false,
+    "accuracyGuaranteed": false,
+    "advice": false,
+    "automaticAction": false,
+    "automatedDecision": false,
+    "buildNetworkUsed": false,
+    "credentialAccess": false,
+    "credentialCollection": false,
+    "currentOfficeholders": false,
+    "eligibilityDetermination": false,
+    "filingCapability": false,
+    "governmentAffiliation": false,
+    "governmentEvidenceFromExternalBridges": false,
+    "interactiveForms": false,
+    "legalAdvice": false,
+    "liabilityCalculation": false,
+    "liveTaxRates": false,
+    "liveAuthorityGuarantee": false,
+    "mcpExposure": false,
+    "officialEndorsement": false,
+    "partyProfiles": false,
+    "paymentCapability": false,
+    "peopleProfiles": false,
+    "personalData": false,
+    "personalDataCollection": false,
+    "postRequests": false,
+    "runtimeDataTransfer": false,
+    "runtimeNetwork": false,
+    "scalarScores": false,
+    "submissions": false,
+    "taxAdvice": false,
+    "transactionExecution": false
+  },
+  "interpretationRules": [
+    "A source-stated claim paraphrases a cited official source; an editorial synthesis is labelled and cites every source used.",
+    "Enacted legislation is used for legal authority; institutional pages describe roles; guidance and codes are not silently promoted to legislation.",
+    "Authority, public money, retail payments, digital service delivery, data exchange and redress remain separate rails.",
+    "Devolution is asymmetric. A topic label does not by itself establish legislative or executive competence.",
+    "Named people, political parties, current officeholders, live rates, personal cases and inferred influence are outside this release.",
+    "TaxSorted is an independent, non-official, receipt-bound crosswalk only; no TaxSorted text supports a government claim.",
+    "Legislation pages can include amendments, commencement limits or outstanding effects; users must inspect current status for an actual matter.",
+    "Redress routes are typed alternatives, not one universal ladder; eligibility and deadlines vary and must be checked at the official start page."
+  ],
+  "freshness": {
+    "mode": "dated-static-snapshot",
+    "nextReviewDue": "2026-09-21",
+    "onPastReview": "show-warning-and-require-a-new-reviewed-snapshot-before-changing-claims",
+    "reviewTriggers": [
+      "constitutional or devolution legislation changes",
+      "departmental, tribunal, ombudsman or digital-service responsibility changes",
+      "a cited source moves, is withdrawn or materially changes",
+      "a TaxSorted receipt, version, rights statement or selected record ID changes"
+    ],
+    "sourceCheckedOn": "2026-08-21",
+    "taxsortedUpstreamReviewAlarm": true
+  }
+}

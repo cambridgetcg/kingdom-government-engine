@@ -1,0 +1,527 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://thekingdom.dev/government/schemas/v0.1/public-snapshot.schema.json",
+  "title": "KINGDOM Government Engine public snapshot v0.1",
+  "description": "Closed, static, source-linked United Kingdom institutional atlas with maintainer-authorized assisted URL reviews and non-official receipt-only TaxSorted crosswalks.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "contractVersion",
+    "title",
+    "asOf",
+    "jurisdiction",
+    "urls",
+    "authorship",
+    "freshness",
+    "sourceLedgerPolicy",
+    "interpretationRules",
+    "boundaries",
+    "buildProvenance",
+    "counts",
+    "planes",
+    "sources",
+    "claims",
+    "bodies",
+    "relations",
+    "flows",
+    "rails",
+    "redressRoutes",
+    "unknowns",
+    "externalBridges",
+    "relatedResources"
+  ],
+  "properties": {
+    "schema": { "const": "kingdom.government-engine-public-snapshot/0.1" },
+    "contractVersion": { "const": "0.1.0" },
+    "title": { "const": "Government Engine: United Kingdom" },
+    "asOf": { "const": "2026-08-21" },
+    "jurisdiction": { "const": "United Kingdom" },
+    "urls": { "$ref": "#/$defs/urls" },
+    "authorship": { "$ref": "#/$defs/authorship" },
+    "freshness": { "$ref": "#/$defs/freshness" },
+    "sourceLedgerPolicy": { "$ref": "#/$defs/sourceLedgerPolicy" },
+    "interpretationRules": {
+      "type": "array",
+      "minItems": 8,
+      "maxItems": 8,
+      "uniqueItems": true,
+      "items": { "$ref": "#/$defs/nonempty" }
+    },
+    "boundaries": { "$ref": "#/$defs/publicBoundaries" },
+    "buildProvenance": { "$ref": "#/$defs/buildProvenance" },
+    "counts": { "$ref": "#/$defs/counts" },
+    "planes": { "type": "array", "minItems": 6, "maxItems": 6, "items": { "$ref": "#/$defs/plane" } },
+    "sources": { "type": "array", "minItems": 66, "maxItems": 66, "items": { "$ref": "#/$defs/source" } },
+    "claims": { "type": "array", "minItems": 58, "maxItems": 58, "items": { "$ref": "#/$defs/claim" } },
+    "bodies": { "type": "array", "minItems": 39, "maxItems": 39, "items": { "$ref": "#/$defs/body" } },
+    "relations": { "type": "array", "minItems": 34, "maxItems": 34, "items": { "$ref": "#/$defs/relation" } },
+    "flows": { "type": "array", "minItems": 10, "maxItems": 10, "items": { "$ref": "#/$defs/flow" } },
+    "rails": { "type": "array", "minItems": 11, "maxItems": 11, "items": { "$ref": "#/$defs/rail" } },
+    "redressRoutes": { "type": "array", "minItems": 10, "maxItems": 10, "items": { "$ref": "#/$defs/redressRoute" } },
+    "unknowns": { "type": "array", "minItems": 10, "maxItems": 10, "items": { "$ref": "#/$defs/unknown" } },
+    "externalBridges": { "type": "array", "minItems": 2, "maxItems": 2, "items": { "$ref": "#/$defs/externalBridge" } },
+    "relatedResources": { "type": "array", "minItems": 2, "maxItems": 2, "items": { "$ref": "#/$defs/relatedResource" } }
+  },
+  "$defs": {
+    "nonempty": { "type": "string", "minLength": 1, "maxLength": 4096 },
+    "id": { "type": "string", "pattern": "^[a-z][a-z0-9]*(?::[a-z0-9][a-z0-9-]*)+$", "maxLength": 160 },
+    "sha256": { "type": "string", "pattern": "^sha256:[0-9a-f]{64}$" },
+    "idArray": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 32,
+      "uniqueItems": true,
+      "items": { "$ref": "#/$defs/id" }
+    },
+    "stringArray": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 32,
+      "uniqueItems": true,
+      "items": { "$ref": "#/$defs/nonempty" }
+    },
+    "urls": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["canonical", "guide", "human", "mutableAlias", "producer"],
+      "properties": {
+        "canonical": { "const": "https://thekingdom.dev/government/uk-government-engine-2026-08-21.json" },
+        "guide": { "const": "https://thekingdom.dev/UK-GOVERNMENT-ENGINE-v0.1.md" },
+        "human": { "const": "https://thekingdom.dev/government-engine/" },
+        "mutableAlias": { "const": "https://thekingdom.dev/government.json" },
+        "producer": { "const": "https://github.com/cambridgetcg/kingdom-government-engine/tree/v0.1.0" }
+      }
+    },
+    "authorship": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["compiledBy", "exactTextHumanReviewed", "humanDirectionRecorded", "origin"],
+      "properties": {
+        "compiledBy": { "const": "codex-assisted-publication" },
+        "exactTextHumanReviewed": { "const": false },
+        "humanDirectionRecorded": { "const": true },
+        "origin": { "const": "maintainer-authorized-assisted-publication" }
+      }
+    },
+    "freshness": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["mode", "nextReviewDue", "onPastReview", "reviewTriggers", "sourceCheckedOn", "taxsortedUpstreamReviewAlarm"],
+      "properties": {
+        "mode": { "const": "dated-static-snapshot" },
+        "nextReviewDue": { "const": "2026-09-21" },
+        "onPastReview": { "const": "show-warning-and-require-a-new-reviewed-snapshot-before-changing-claims" },
+        "reviewTriggers": { "type": "array", "minItems": 4, "maxItems": 4, "uniqueItems": true, "items": { "$ref": "#/$defs/nonempty" } },
+        "sourceCheckedOn": { "const": "2026-08-21" },
+        "taxsortedUpstreamReviewAlarm": { "const": true }
+      }
+    },
+    "sourceIntegrity": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["reviewMode", "exactTextHumanReviewed", "rawBodyRetained", "rawSha256", "rawHashVerified", "contentReceipt", "byteVerified", "immutableSnapshot"],
+      "properties": {
+        "reviewMode": { "const": "maintainer-authorized-assisted-url-review" },
+        "exactTextHumanReviewed": { "const": false },
+        "rawBodyRetained": { "const": false },
+        "rawSha256": { "type": "null" },
+        "rawHashVerified": { "const": false },
+        "contentReceipt": { "type": "null" },
+        "byteVerified": { "const": false },
+        "immutableSnapshot": { "const": false }
+      }
+    },
+    "sourceRights": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["publicationMode", "officialSourceBodyRepublished", "reuseLicenceInferred", "licence"],
+      "properties": {
+        "publicationMode": { "const": "link-only" },
+        "officialSourceBodyRepublished": { "const": false },
+        "reuseLicenceInferred": { "const": false },
+        "licence": { "type": "null" }
+      }
+    },
+    "sourceLedgerPolicy": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["reviewMode", "checkedOnMeaning", "integrity", "rights", "doesNotProve"],
+      "properties": {
+        "reviewMode": { "const": "maintainer-authorized-assisted-url-review" },
+        "checkedOnMeaning": { "const": "Assisted URL observation date only; not exact-text human review, a content receipt, a legal-status guarantee or a freshness guarantee." },
+        "integrity": { "$ref": "#/$defs/sourceIntegrity" },
+        "rights": { "$ref": "#/$defs/sourceRights" },
+        "doesNotProve": { "type": "array", "minItems": 4, "maxItems": 4, "uniqueItems": true, "items": { "$ref": "#/$defs/nonempty" } }
+      }
+    },
+    "publicBoundaries": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "accountAccess", "accuracyGuaranteed", "advice", "automatedDecision", "automaticAction", "buildNetworkUsed",
+        "credentialAccess", "credentialCollection", "currentOfficeholders", "eligibilityDetermination", "filingCapability",
+        "governmentAffiliation", "governmentEvidenceFromExternalBridges", "interactiveForms", "legalAdvice", "liabilityCalculation",
+        "liveAuthorityGuarantee", "liveTaxRates", "mcpExposure", "officialEndorsement", "partyProfiles", "paymentCapability",
+        "peopleProfiles", "personalData", "personalDataCollection", "postRequests", "runtimeDataTransfer", "runtimeNetwork",
+        "scalarScores", "submissions", "taxAdvice", "transactionExecution"
+      ],
+      "properties": {
+        "accountAccess": { "const": false },
+        "accuracyGuaranteed": { "const": false },
+        "advice": { "const": false },
+        "automatedDecision": { "const": false },
+        "automaticAction": { "const": false },
+        "buildNetworkUsed": { "const": false },
+        "credentialAccess": { "const": false },
+        "credentialCollection": { "const": false },
+        "currentOfficeholders": { "const": false },
+        "eligibilityDetermination": { "const": false },
+        "filingCapability": { "const": false },
+        "governmentAffiliation": { "const": false },
+        "governmentEvidenceFromExternalBridges": { "const": false },
+        "interactiveForms": { "const": false },
+        "legalAdvice": { "const": false },
+        "liabilityCalculation": { "const": false },
+        "liveAuthorityGuarantee": { "const": false },
+        "liveTaxRates": { "const": false },
+        "mcpExposure": { "const": false },
+        "officialEndorsement": { "const": false },
+        "partyProfiles": { "const": false },
+        "paymentCapability": { "const": false },
+        "peopleProfiles": { "const": false },
+        "personalData": { "const": false },
+        "personalDataCollection": { "const": false },
+        "postRequests": { "const": false },
+        "runtimeDataTransfer": { "const": false },
+        "runtimeNetwork": { "const": false },
+        "scalarScores": { "const": false },
+        "submissions": { "const": false },
+        "taxAdvice": { "const": false },
+        "transactionExecution": { "const": false }
+      }
+    },
+    "inputReceipts": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["bridges", "claims", "config", "map", "sources"],
+      "properties": {
+        "bridges": { "$ref": "#/$defs/sha256" },
+        "claims": { "$ref": "#/$defs/sha256" },
+        "config": { "$ref": "#/$defs/sha256" },
+        "map": { "$ref": "#/$defs/sha256" },
+        "sources": { "$ref": "#/$defs/sha256" }
+      }
+    },
+    "buildProvenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["inputCanonicalReceipts", "schemaByteReceipt", "schemaCanonicalReceipt", "taxsortedCaptureManifestCanonicalReceipt", "networkUsed"],
+      "properties": {
+        "inputCanonicalReceipts": { "$ref": "#/$defs/inputReceipts" },
+        "schemaByteReceipt": { "$ref": "#/$defs/sha256" },
+        "schemaCanonicalReceipt": { "$ref": "#/$defs/sha256" },
+        "taxsortedCaptureManifestCanonicalReceipt": { "$ref": "#/$defs/sha256" },
+        "networkUsed": { "const": false }
+      }
+    },
+    "counts": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["planes", "sources", "claims", "bodies", "relations", "flows", "rails", "redressRoutes", "unknowns", "externalBridges", "relatedResources"],
+      "properties": {
+        "planes": { "const": 6 },
+        "sources": { "const": 66 },
+        "claims": { "const": 58 },
+        "bodies": { "const": 39 },
+        "relations": { "const": 34 },
+        "flows": { "const": 10 },
+        "rails": { "const": 11 },
+        "redressRoutes": { "const": 10 },
+        "unknowns": { "const": 10 },
+        "externalBridges": { "const": 2 },
+        "relatedResources": { "const": 2 }
+      }
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "title", "url", "publisher", "sourceClass", "jurisdiction", "checkedOn", "statusCaveat", "integrity", "rights", "doesNotProve"],
+      "properties": {
+        "id": { "$ref": "#/$defs/id" },
+        "title": { "$ref": "#/$defs/nonempty" },
+        "url": { "type": "string", "format": "uri", "pattern": "^https://", "maxLength": 2048 },
+        "publisher": { "$ref": "#/$defs/nonempty" },
+        "sourceClass": { "enum": ["legislation", "official-code", "official-data-service", "official-guidance", "official-procedure", "official-rights-terms", "official-role-page"] },
+        "jurisdiction": { "$ref": "#/$defs/nonempty" },
+        "checkedOn": { "type": "string", "format": "date" },
+        "statusCaveat": { "$ref": "#/$defs/nonempty" },
+        "integrity": { "$ref": "#/$defs/sourceIntegrity" },
+        "rights": { "$ref": "#/$defs/sourceRights" },
+        "doesNotProve": { "type": "array", "minItems": 4, "maxItems": 4, "uniqueItems": true, "items": { "$ref": "#/$defs/nonempty" } }
+      }
+    },
+    "claim": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "text", "claimType", "sourceIds", "checkedOn", "limitation"],
+      "properties": {
+        "id": { "$ref": "#/$defs/id" },
+        "text": { "$ref": "#/$defs/nonempty" },
+        "claimType": { "enum": ["editorial-synthesis", "source-stated"] },
+        "sourceIds": { "$ref": "#/$defs/idArray" },
+        "checkedOn": { "type": "string", "format": "date" },
+        "limitation": { "$ref": "#/$defs/nonempty" }
+      }
+    },
+    "plane": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "name", "question", "description", "claimIds"],
+      "properties": {
+        "id": { "$ref": "#/$defs/id" },
+        "name": { "enum": ["Delivery", "Jurisdiction", "Law", "Mandate", "Money", "Remedy"] },
+        "question": { "$ref": "#/$defs/nonempty" },
+        "description": { "$ref": "#/$defs/nonempty" },
+        "claimIds": { "$ref": "#/$defs/idArray" }
+      }
+    },
+    "body": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "name", "bodyType", "jurisdiction", "planeIds", "claimIds"],
+      "properties": {
+        "id": { "$ref": "#/$defs/id" },
+        "name": { "$ref": "#/$defs/nonempty" },
+        "bodyType": { "enum": ["audit-body", "central-bank", "civil-service", "constitutional-institution", "court", "court-system", "delivery-system", "devolved-government", "devolved-legislature", "executive-body", "forecast-body", "government", "independent-office", "legislative-chamber", "legislature", "local-government-system", "ministerial-department", "non-ministerial-department", "ombudsman", "parliamentary-committee", "regulator", "shared-service", "statistics-body", "tribunal"] },
+        "jurisdiction": { "$ref": "#/$defs/nonempty" },
+        "planeIds": { "$ref": "#/$defs/idArray" },
+        "claimIds": { "$ref": "#/$defs/idArray" }
+      }
+    },
+    "relation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "fromId", "toId", "relationType", "planeIds", "claimIds"],
+      "properties": {
+        "id": { "$ref": "#/$defs/id" },
+        "fromId": { "$ref": "#/$defs/id" },
+        "toId": { "$ref": "#/$defs/id" },
+        "relationType": { "$ref": "#/$defs/nonempty" },
+        "planeIds": { "$ref": "#/$defs/idArray" },
+        "claimIds": { "$ref": "#/$defs/idArray" }
+      }
+    },
+    "flowStep": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["order", "name", "bodyIds", "claimIds", "caveat"],
+      "properties": {
+        "order": { "type": "integer", "minimum": 1, "maximum": 12 },
+        "name": { "$ref": "#/$defs/nonempty" },
+        "bodyIds": { "$ref": "#/$defs/idArray" },
+        "claimIds": { "$ref": "#/$defs/idArray" },
+        "caveat": { "$ref": "#/$defs/nonempty" }
+      }
+    },
+    "flow": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "name", "planeIds", "jurisdiction", "entry", "exit", "steps"],
+      "properties": {
+        "id": { "$ref": "#/$defs/id" },
+        "name": { "$ref": "#/$defs/nonempty" },
+        "planeIds": { "$ref": "#/$defs/idArray" },
+        "jurisdiction": { "$ref": "#/$defs/nonempty" },
+        "entry": { "$ref": "#/$defs/nonempty" },
+        "exit": { "$ref": "#/$defs/nonempty" },
+        "steps": { "type": "array", "minItems": 2, "maxItems": 12, "items": { "$ref": "#/$defs/flowStep" } }
+      }
+    },
+    "rail": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "name", "railType", "description", "bodyIds", "claimIds", "authorityBoundary"],
+      "properties": {
+        "id": { "$ref": "#/$defs/id" },
+        "name": { "$ref": "#/$defs/nonempty" },
+        "railType": { "enum": ["data", "jurisdiction", "law", "mandate", "money-authority", "money-operation", "money-oversight", "remedy", "service"] },
+        "description": { "$ref": "#/$defs/nonempty" },
+        "bodyIds": { "$ref": "#/$defs/idArray" },
+        "claimIds": { "$ref": "#/$defs/idArray" },
+        "authorityBoundary": { "$ref": "#/$defs/nonempty" }
+      }
+    },
+    "redressRoute": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "name", "routeType", "jurisdiction", "startUrl", "bodyIds", "claimIds", "prerequisites", "deadlineRule", "automaticEscalation", "deadlineCalculated", "eligibilityDetermined", "legalAdvice"],
+      "properties": {
+        "id": { "$ref": "#/$defs/id" },
+        "name": { "$ref": "#/$defs/nonempty" },
+        "routeType": { "enum": ["information-rights", "judicial-review", "ombudsman", "service-complaint", "statutory-review", "tribunal-appeal"] },
+        "jurisdiction": { "$ref": "#/$defs/nonempty" },
+        "startUrl": { "type": "string", "format": "uri", "pattern": "^https://", "maxLength": 2048 },
+        "bodyIds": { "$ref": "#/$defs/idArray" },
+        "claimIds": { "$ref": "#/$defs/idArray" },
+        "prerequisites": { "$ref": "#/$defs/stringArray" },
+        "deadlineRule": { "$ref": "#/$defs/nonempty" },
+        "automaticEscalation": { "const": false },
+        "deadlineCalculated": { "const": false },
+        "eligibilityDetermined": { "const": false },
+        "legalAdvice": { "const": false }
+      }
+    },
+    "unknown": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "question", "scope", "reason", "sourceIds", "reviewTrigger"],
+      "properties": {
+        "id": { "$ref": "#/$defs/id" },
+        "question": { "$ref": "#/$defs/nonempty" },
+        "scope": { "$ref": "#/$defs/nonempty" },
+        "reason": { "$ref": "#/$defs/nonempty" },
+        "sourceIds": { "type": "array", "maxItems": 16, "uniqueItems": true, "items": { "$ref": "#/$defs/id" } },
+        "reviewTrigger": { "$ref": "#/$defs/nonempty" }
+      }
+    },
+    "fileReceipt": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["path", "url", "bytes", "sha256"],
+      "properties": {
+        "path": { "type": "string", "pattern": "^vendor/captures/taxsorted/", "maxLength": 256 },
+        "url": { "type": "string", "format": "uri", "pattern": "^https://", "maxLength": 2048 },
+        "bytes": { "type": "integer", "minimum": 1, "maximum": 2097152 },
+        "sha256": { "$ref": "#/$defs/sha256" }
+      }
+    },
+    "captureReceipts": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["dictionary", "graph", "manifest", "schema"],
+      "properties": {
+        "dictionary": { "$ref": "#/$defs/fileReceipt" },
+        "graph": { "$ref": "#/$defs/fileReceipt" },
+        "manifest": { "$ref": "#/$defs/fileReceipt" },
+        "schema": { "$ref": "#/$defs/fileReceipt" }
+      }
+    },
+    "bridgeBoundaries": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["captureReceiptAuthenticatesPublisher", "captureReceiptGuaranteesAvailability", "captureReceiptProvesTruth", "captureReceiptSigned", "endorsement", "fullProviderSchemaValidationPerformed", "governmentEvidenceSource", "official", "runtimeDataTransfer", "taxsortedContentUsedAsGovernmentEvidence", "taxsortedRecordTextProjectedIntoGovernmentSnapshot", "upstreamSourceBodyBytesRetained"],
+      "properties": {
+        "captureReceiptAuthenticatesPublisher": { "const": false },
+        "captureReceiptGuaranteesAvailability": { "const": false },
+        "captureReceiptProvesTruth": { "const": false },
+        "captureReceiptSigned": { "const": false },
+        "endorsement": { "const": false },
+        "fullProviderSchemaValidationPerformed": { "const": false },
+        "governmentEvidenceSource": { "const": false },
+        "official": { "const": false },
+        "runtimeDataTransfer": { "const": false },
+        "taxsortedContentUsedAsGovernmentEvidence": { "const": false },
+        "taxsortedRecordTextProjectedIntoGovernmentSnapshot": { "const": false },
+        "upstreamSourceBodyBytesRetained": { "const": false }
+      }
+    },
+    "licence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name", "url"],
+      "properties": {
+        "name": { "const": "Creative Commons Attribution-ShareAlike 4.0" },
+        "url": { "const": "https://creativecommons.org/licenses/by-sa/4.0/" }
+      }
+    },
+    "bridgeRights": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["capturedMaterial", "curationLicence", "declarationBy", "declarationIndependentlyVerified", "rightsCaveat", "upstreamSourceBodiesRepublished", "upstreamSourceRightsNotGrantedByThisCapture"],
+      "properties": {
+        "capturedMaterial": { "const": "TaxSorted curated graph records and source locators, release manifest, structural schema and dictionary" },
+        "curationLicence": { "$ref": "#/$defs/licence" },
+        "declarationBy": { "const": "TaxSorted" },
+        "declarationIndependentlyVerified": { "const": false },
+        "rightsCaveat": { "$ref": "#/$defs/nonempty" },
+        "upstreamSourceBodiesRepublished": { "const": false },
+        "upstreamSourceRightsNotGrantedByThisCapture": { "const": true }
+      }
+    },
+    "bridgeProvenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["acquiredOn", "baseUrl", "releaseCheckpointId", "checkpointObservedPublicOn", "immutableSnapshot", "notComplete", "publicationStatus", "upstreamReviewAlarm", "upstreamReviewedOn", "version"],
+      "properties": {
+        "acquiredOn": { "const": "2026-08-21" },
+        "baseUrl": { "type": "string", "format": "uri", "pattern": "^https://", "maxLength": 2048 },
+        "releaseCheckpointId": { "type": "string", "pattern": "^urn:taxsorted:release-checkpoint:", "maxLength": 180 },
+        "checkpointObservedPublicOn": { "type": "string", "format": "date" },
+        "immutableSnapshot": { "type": "null" },
+        "notComplete": { "const": true },
+        "publicationStatus": { "const": "open" },
+        "upstreamReviewAlarm": { "const": true },
+        "upstreamReviewedOn": { "const": "2026-07-10" },
+        "version": { "enum": ["2026-07-10.1", "2026-07-10.2"] }
+      }
+    },
+    "bridgeSourceFreshness": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["evaluatedOn", "totalSourceRecords", "pastReviewAfterCount", "meaning", "allSourcesCurrentGuaranteed"],
+      "properties": {
+        "evaluatedOn": { "const": "2026-08-21" },
+        "totalSourceRecords": { "enum": [52, 73] },
+        "pastReviewAfterCount": { "const": 10 },
+        "meaning": { "const": "Count of TaxSorted source-locator records whose declared reviewAfter date was earlier than capture; not a truth, completeness or legal-currentness test." },
+        "allSourcesCurrentGuaranteed": { "const": false }
+      }
+    },
+    "selectedRecordBinding": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["collection", "recordId", "localIds", "purpose"],
+      "properties": {
+        "collection": { "enum": ["frameworks", "fundingMechanisms", "funds", "pipelineStages", "transparencyGaps"] },
+        "recordId": { "type": "string", "pattern": "^[a-z][a-z0-9-]+$", "maxLength": 160 },
+        "localIds": { "$ref": "#/$defs/idArray" },
+        "purpose": { "$ref": "#/$defs/nonempty" }
+      }
+    },
+    "externalBridge": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "datasetId", "resourceId", "bridgeMode", "boundaryScope", "captureManifestCanonicalReceipt", "graphManifestDatasetHash", "releaseLedgerReceipt", "captureReceipts", "provenance", "sourceFreshnessAtCapture", "rights", "boundaries", "selectedRecordBindings"],
+      "properties": {
+        "id": { "$ref": "#/$defs/id" },
+        "datasetId": { "enum": ["taxsorted:uk-public-funding", "taxsorted:uk-tax-system"] },
+        "resourceId": { "const": "resource:taxsorted-uk-system" },
+        "bridgeMode": { "const": "receipt-bound-crosswalk-only" },
+        "boundaryScope": { "const": "government-engine-public-projection" },
+        "captureManifestCanonicalReceipt": { "$ref": "#/$defs/sha256" },
+        "graphManifestDatasetHash": { "$ref": "#/$defs/sha256" },
+        "releaseLedgerReceipt": { "$ref": "#/$defs/fileReceipt" },
+        "captureReceipts": { "$ref": "#/$defs/captureReceipts" },
+        "provenance": { "$ref": "#/$defs/bridgeProvenance" },
+        "sourceFreshnessAtCapture": { "$ref": "#/$defs/bridgeSourceFreshness" },
+        "rights": { "$ref": "#/$defs/bridgeRights" },
+        "boundaries": { "$ref": "#/$defs/bridgeBoundaries" },
+        "selectedRecordBindings": { "type": "array", "minItems": 7, "maxItems": 13, "uniqueItems": true, "items": { "$ref": "#/$defs/selectedRecordBinding" } }
+      }
+    },
+    "relatedResource": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "title", "url", "relationship", "linkedRecordIds", "duplicatedContent"],
+      "properties": {
+        "id": { "$ref": "#/$defs/id" },
+        "title": { "$ref": "#/$defs/nonempty" },
+        "url": { "type": "string", "format": "uri", "pattern": "^https://", "maxLength": 2048 },
+        "relationship": { "$ref": "#/$defs/nonempty" },
+        "linkedRecordIds": { "type": "array", "minItems": 2, "maxItems": 8, "uniqueItems": true, "items": { "type": "string", "minLength": 1, "maxLength": 160 } },
+        "duplicatedContent": { "const": false }
+      }
+    }
+  }
+}

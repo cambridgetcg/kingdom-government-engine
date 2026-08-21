@@ -1,0 +1,599 @@
+{
+  "planes": [
+    {
+      "id": "plane:delivery",
+      "name": "Delivery",
+      "question": "Which operational bodies and service or data rails carry an authorised function?",
+      "description": "Maps departments, public bodies, shared digital products, APIs, open data and official statistics without treating technology as legal authority.",
+      "claimIds": ["claim:delivery-departments", "claim:delivery-rails-not-authority"]
+    },
+    {
+      "id": "plane:jurisdiction",
+      "name": "Jurisdiction",
+      "question": "Which legislature, executive or local system may act for this territory and exact matter?",
+      "description": "Keeps the asymmetric devolution settlements and four local-government systems separate; topic resemblance is not a competence test.",
+      "claimIds": ["claim:jurisdiction-asymmetric", "claim:jurisdiction-local-four-nations"]
+    },
+    {
+      "id": "plane:law",
+      "name": "Law",
+      "question": "What kind of instrument carries the rule and what route made it?",
+      "description": "Separates Acts, statutory instruments, codes, manuals, standards and adjudication, with legislation-status warnings.",
+      "claimIds": ["claim:delivery-legislation-status", "claim:law-guidance-distinct", "claim:law-primary"]
+    },
+    {
+      "id": "plane:mandate",
+      "name": "Mandate",
+      "question": "How are democratic representation, Commons confidence and executive accountability connected?",
+      "description": "Maps institutions and constitutional relations without people, parties, current officeholders or inferred personal power.",
+      "claimIds": ["claim:authority-election-confidence", "claim:authority-government-parliament-distinct", "claim:authority-parliamentary-sovereignty"]
+    },
+    {
+      "id": "plane:money",
+      "name": "Money",
+      "question": "Which authority, forecast, control, fund, settlement and audit rail is being described?",
+      "description": "Keeps taxing and spending authority, fiscal analysis, central funds, banking, payment settlement, accounts, audit and scrutiny distinct.",
+      "claimIds": ["claim:money-gbs", "claim:money-parliamentary-authority", "claim:money-rtgs-chaps"]
+    },
+    {
+      "id": "plane:remedy",
+      "name": "Remedy",
+      "question": "Is the route a complaint, review, appeal, ombudsman process, information right or judicial review?",
+      "description": "Maps typed official start doors and warns that routes are not one ladder and that deadlines and eligibility vary.",
+      "claimIds": ["claim:remedy-routes-distinct"]
+    }
+  ],
+  "bodies": [
+    {
+      "id": "body:bank-of-england",
+      "name": "Bank of England",
+      "bodyType": "central-bank",
+      "jurisdiction": "United Kingdom",
+      "planeIds": ["plane:money"],
+      "claimIds": ["claim:money-bank-england", "claim:money-rtgs-chaps"]
+    },
+    {
+      "id": "body:cabinet",
+      "name": "Cabinet",
+      "bodyType": "executive-body",
+      "jurisdiction": "United Kingdom",
+      "planeIds": ["plane:mandate"],
+      "claimIds": ["claim:authority-crown-government", "claim:authority-ministerial-accountability"]
+    },
+    {
+      "id": "body:comptroller-auditor-general",
+      "name": "Comptroller and Auditor General",
+      "bodyType": "independent-office",
+      "jurisdiction": "United Kingdom",
+      "planeIds": ["plane:money"],
+      "claimIds": ["claim:money-cag-credit", "claim:money-nao"]
+    },
+    {
+      "id": "body:crown",
+      "name": "The Crown in its constitutional role",
+      "bodyType": "constitutional-institution",
+      "jurisdiction": "United Kingdom",
+      "planeIds": ["plane:law", "plane:mandate"],
+      "claimIds": ["claim:authority-crown-government", "claim:authority-crown-in-parliament"]
+    },
+    {
+      "id": "body:first-tier-tax-tribunal",
+      "name": "First-tier Tribunal (Tax)",
+      "bodyType": "tribunal",
+      "jurisdiction": "United Kingdom",
+      "planeIds": ["plane:remedy"],
+      "claimIds": ["claim:remedy-tax-tribunal"]
+    },
+    {
+      "id": "body:government-banking-service",
+      "name": "Government Banking Service",
+      "bodyType": "shared-service",
+      "jurisdiction": "United Kingdom",
+      "planeIds": ["plane:delivery", "plane:money"],
+      "claimIds": ["claim:money-gbs"]
+    },
+    {
+      "id": "body:government-digital-service",
+      "name": "Government Digital Service",
+      "bodyType": "shared-service",
+      "jurisdiction": "United Kingdom",
+      "planeIds": ["plane:delivery"],
+      "claimIds": ["claim:delivery-rails-not-authority", "claim:delivery-service-standard"]
+    },
+    {
+      "id": "body:hmrc",
+      "name": "HM Revenue & Customs",
+      "bodyType": "non-ministerial-department",
+      "jurisdiction": "United Kingdom",
+      "planeIds": ["plane:delivery", "plane:money", "plane:remedy"],
+      "claimIds": ["claim:money-hmrc-role", "claim:money-tax-policy-administration", "claim:remedy-service-complaint"]
+    },
+    {
+      "id": "body:hm-treasury",
+      "name": "HM Treasury",
+      "bodyType": "ministerial-department",
+      "jurisdiction": "United Kingdom",
+      "planeIds": ["plane:money"],
+      "claimIds": ["claim:money-tax-policy-administration", "claim:money-treasury-role"]
+    },
+    {
+      "id": "body:home-civil-service",
+      "name": "Home Civil Service",
+      "bodyType": "civil-service",
+      "jurisdiction": "Great Britain and reserved UK functions",
+      "planeIds": ["plane:delivery", "plane:mandate"],
+      "claimIds": ["claim:authority-civil-service"]
+    },
+    {
+      "id": "body:house-commons",
+      "name": "House of Commons",
+      "bodyType": "legislative-chamber",
+      "jurisdiction": "United Kingdom",
+      "planeIds": ["plane:law", "plane:mandate", "plane:money"],
+      "claimIds": ["claim:authority-crown-in-parliament", "claim:authority-election-confidence", "claim:money-parliamentary-authority"]
+    },
+    {
+      "id": "body:house-lords",
+      "name": "House of Lords",
+      "bodyType": "legislative-chamber",
+      "jurisdiction": "United Kingdom",
+      "planeIds": ["plane:law", "plane:mandate"],
+      "claimIds": ["claim:authority-crown-in-parliament", "claim:law-primary"]
+    },
+    {
+      "id": "body:information-commissioner",
+      "name": "Information Commissioner's Office",
+      "bodyType": "regulator",
+      "jurisdiction": "United Kingdom",
+      "planeIds": ["plane:delivery", "plane:remedy"],
+      "claimIds": ["claim:delivery-data-law", "claim:remedy-ico"]
+    },
+    {
+      "id": "body:judiciary-england-wales",
+      "name": "Judiciary of England and Wales",
+      "bodyType": "court-system",
+      "jurisdiction": "England and Wales",
+      "planeIds": ["plane:law", "plane:remedy"],
+      "claimIds": ["claim:law-judicial-independence", "claim:remedy-judicial-review"]
+    },
+    {
+      "id": "body:local-government-england",
+      "name": "Local government in England",
+      "bodyType": "local-government-system",
+      "jurisdiction": "England",
+      "planeIds": ["plane:delivery", "plane:jurisdiction"],
+      "claimIds": ["claim:jurisdiction-england-devolution-2026", "claim:jurisdiction-local-four-nations", "claim:jurisdiction-local-government"]
+    },
+    {
+      "id": "body:local-government-social-care-ombudsman",
+      "name": "Local Government and Social Care Ombudsman",
+      "bodyType": "ombudsman",
+      "jurisdiction": "England",
+      "planeIds": ["plane:remedy"],
+      "claimIds": ["claim:remedy-lgsco"]
+    },
+    {
+      "id": "body:local-government-northern-ireland",
+      "name": "Local government in Northern Ireland",
+      "bodyType": "local-government-system",
+      "jurisdiction": "Northern Ireland",
+      "planeIds": ["plane:delivery", "plane:jurisdiction"],
+      "claimIds": ["claim:jurisdiction-local-four-nations", "claim:jurisdiction-local-government"]
+    },
+    {
+      "id": "body:local-government-scotland",
+      "name": "Local government in Scotland",
+      "bodyType": "local-government-system",
+      "jurisdiction": "Scotland",
+      "planeIds": ["plane:delivery", "plane:jurisdiction"],
+      "claimIds": ["claim:jurisdiction-local-four-nations", "claim:jurisdiction-local-government"]
+    },
+    {
+      "id": "body:local-government-wales",
+      "name": "Local government in Wales",
+      "bodyType": "local-government-system",
+      "jurisdiction": "Wales",
+      "planeIds": ["plane:delivery", "plane:jurisdiction"],
+      "claimIds": ["claim:jurisdiction-local-four-nations", "claim:jurisdiction-local-government"]
+    },
+    {
+      "id": "body:national-audit-office",
+      "name": "National Audit Office",
+      "bodyType": "audit-body",
+      "jurisdiction": "United Kingdom",
+      "planeIds": ["plane:money"],
+      "claimIds": ["claim:money-nao"]
+    },
+    {
+      "id": "body:northern-ireland-assembly",
+      "name": "Northern Ireland Assembly",
+      "bodyType": "devolved-legislature",
+      "jurisdiction": "Northern Ireland",
+      "planeIds": ["plane:jurisdiction", "plane:law", "plane:mandate"],
+      "claimIds": ["claim:jurisdiction-northern-ireland"]
+    },
+    {
+      "id": "body:northern-ireland-executive",
+      "name": "Northern Ireland Executive",
+      "bodyType": "devolved-government",
+      "jurisdiction": "Northern Ireland",
+      "planeIds": ["plane:delivery", "plane:jurisdiction", "plane:mandate"],
+      "claimIds": ["claim:jurisdiction-northern-ireland"]
+    },
+    {
+      "id": "body:northern-ireland-ombudsman",
+      "name": "Northern Ireland Public Services Ombudsman",
+      "bodyType": "ombudsman",
+      "jurisdiction": "Northern Ireland",
+      "planeIds": ["plane:remedy"],
+      "claimIds": ["claim:remedy-nipso"]
+    },
+    {
+      "id": "body:office-budget-responsibility",
+      "name": "Office for Budget Responsibility",
+      "bodyType": "forecast-body",
+      "jurisdiction": "United Kingdom",
+      "planeIds": ["plane:money"],
+      "claimIds": ["claim:money-obr"]
+    },
+    {
+      "id": "body:office-national-statistics",
+      "name": "Office for National Statistics",
+      "bodyType": "statistics-body",
+      "jurisdiction": "United Kingdom",
+      "planeIds": ["plane:delivery"],
+      "claimIds": ["claim:delivery-official-statistics"]
+    },
+    {
+      "id": "body:parliamentary-health-service-ombudsman",
+      "name": "Parliamentary and Health Service Ombudsman",
+      "bodyType": "ombudsman",
+      "jurisdiction": "United Kingdom and NHS in England within remit",
+      "planeIds": ["plane:remedy"],
+      "claimIds": ["claim:remedy-phso"]
+    },
+    {
+      "id": "body:payment-systems-regulator",
+      "name": "Payment Systems Regulator",
+      "bodyType": "regulator",
+      "jurisdiction": "United Kingdom",
+      "planeIds": ["plane:money"],
+      "claimIds": ["claim:money-payment-regulator"]
+    },
+    {
+      "id": "body:public-accounts-committee",
+      "name": "House of Commons Public Accounts Committee",
+      "bodyType": "parliamentary-committee",
+      "jurisdiction": "United Kingdom",
+      "planeIds": ["plane:money", "plane:mandate"],
+      "claimIds": ["claim:money-pac"]
+    },
+    {
+      "id": "body:public-bodies-departments",
+      "name": "UK government departments, agencies and public bodies",
+      "bodyType": "delivery-system",
+      "jurisdiction": "United Kingdom with body-specific scope",
+      "planeIds": ["plane:delivery", "plane:money"],
+      "claimIds": ["claim:delivery-departments", "claim:money-estimates"]
+    },
+    {
+      "id": "body:public-services-ombudsman-wales",
+      "name": "Public Services Ombudsman for Wales",
+      "bodyType": "ombudsman",
+      "jurisdiction": "Wales",
+      "planeIds": ["plane:remedy"],
+      "claimIds": ["claim:remedy-psow"]
+    },
+    {
+      "id": "body:scottish-government",
+      "name": "Scottish Government",
+      "bodyType": "devolved-government",
+      "jurisdiction": "Scotland",
+      "planeIds": ["plane:delivery", "plane:jurisdiction", "plane:mandate"],
+      "claimIds": ["claim:jurisdiction-scotland"]
+    },
+    {
+      "id": "body:scottish-parliament",
+      "name": "Scottish Parliament",
+      "bodyType": "devolved-legislature",
+      "jurisdiction": "Scotland",
+      "planeIds": ["plane:jurisdiction", "plane:law", "plane:mandate"],
+      "claimIds": ["claim:jurisdiction-scotland"]
+    },
+    {
+      "id": "body:scottish-public-services-ombudsman",
+      "name": "Scottish Public Services Ombudsman",
+      "bodyType": "ombudsman",
+      "jurisdiction": "Scotland",
+      "planeIds": ["plane:remedy"],
+      "claimIds": ["claim:remedy-spso"]
+    },
+    {
+      "id": "body:senedd",
+      "name": "Senedd Cymru",
+      "bodyType": "devolved-legislature",
+      "jurisdiction": "Wales",
+      "planeIds": ["plane:jurisdiction", "plane:law", "plane:mandate"],
+      "claimIds": ["claim:jurisdiction-wales"]
+    },
+    {
+      "id": "body:uk-government",
+      "name": "Government of the United Kingdom",
+      "bodyType": "government",
+      "jurisdiction": "United Kingdom with function-specific territorial scope",
+      "planeIds": ["plane:delivery", "plane:mandate", "plane:money"],
+      "claimIds": ["claim:authority-crown-government", "claim:authority-government-parliament-distinct", "claim:authority-ministerial-accountability"]
+    },
+    {
+      "id": "body:uk-parliament",
+      "name": "Parliament of the United Kingdom",
+      "bodyType": "legislature",
+      "jurisdiction": "United Kingdom",
+      "planeIds": ["plane:jurisdiction", "plane:law", "plane:mandate", "plane:money"],
+      "claimIds": ["claim:authority-crown-in-parliament", "claim:authority-parliamentary-sovereignty", "claim:money-parliamentary-authority"]
+    },
+    {
+      "id": "body:uk-statistics-authority",
+      "name": "UK Statistics Authority",
+      "bodyType": "statistics-body",
+      "jurisdiction": "United Kingdom",
+      "planeIds": ["plane:delivery"],
+      "claimIds": ["claim:delivery-official-statistics"]
+    },
+    {
+      "id": "body:uk-supreme-court",
+      "name": "Supreme Court of the United Kingdom",
+      "bodyType": "court",
+      "jurisdiction": "United Kingdom with appeal-specific limits",
+      "planeIds": ["plane:law", "plane:remedy"],
+      "claimIds": ["claim:law-uk-supreme-court"]
+    },
+    {
+      "id": "body:welsh-government",
+      "name": "Welsh Government",
+      "bodyType": "devolved-government",
+      "jurisdiction": "Wales",
+      "planeIds": ["plane:delivery", "plane:jurisdiction", "plane:mandate"],
+      "claimIds": ["claim:jurisdiction-wales"]
+    }
+  ],
+  "relations": [
+    {"id":"relation:bank-gbs-distinct-rails","fromId":"body:bank-of-england","toId":"body:government-banking-service","relationType":"operationally-distinct-no-operator-edge-asserted","planeIds":["plane:money"],"claimIds":["claim:money-gbs","claim:money-rtgs-chaps"]},
+    {"id":"relation:cag-controls-credit","fromId":"body:comptroller-auditor-general","toId":"body:hm-treasury","relationType":"controls-authorised-issue","planeIds":["plane:money"],"claimIds":["claim:money-cag-credit"]},
+    {"id":"relation:cabinet-coordinates-delivery","fromId":"body:cabinet","toId":"body:public-bodies-departments","relationType":"coordinates-minister-led-functions-within-remit","planeIds":["plane:delivery","plane:mandate"],"claimIds":["claim:authority-ministerial-accountability","claim:delivery-departments"]},
+    {"id":"relation:commons-constituent-parliament","fromId":"body:house-commons","toId":"body:uk-parliament","relationType":"constituent-of","planeIds":["plane:law","plane:mandate","plane:money"],"claimIds":["claim:authority-crown-in-parliament"]},
+    {"id":"relation:crown-constituent-parliament","fromId":"body:crown","toId":"body:uk-parliament","relationType":"constituent-of","planeIds":["plane:law","plane:mandate"],"claimIds":["claim:authority-crown-in-parliament"]},
+    {"id":"relation:crown-formal-executive","fromId":"body:crown","toId":"body:uk-government","relationType":"constitutional-form","planeIds":["plane:mandate"],"claimIds":["claim:authority-crown-government"]},
+    {"id":"relation:ftt-adjudicates-hmrc-appeals","fromId":"body:first-tier-tax-tribunal","toId":"body:hmrc","relationType":"adjudicates-eligible-appeals-from","planeIds":["plane:remedy"],"claimIds":["claim:remedy-tax-tribunal"]},
+    {"id":"relation:gbs-supports-public-bodies","fromId":"body:government-banking-service","toId":"body:public-bodies-departments","relationType":"provides-banking-service-to","planeIds":["plane:delivery","plane:money"],"claimIds":["claim:money-gbs"]},
+    {"id":"relation:gds-supports-participants","fromId":"body:government-digital-service","toId":"body:public-bodies-departments","relationType":"offers-shared-service-to-participating-bodies","planeIds":["plane:delivery"],"claimIds":["claim:delivery-rails-not-authority","claim:delivery-service-standard"]},
+    {"id":"relation:government-accountable-parliament","fromId":"body:uk-government","toId":"body:uk-parliament","relationType":"accountable-to","planeIds":["plane:mandate"],"claimIds":["claim:authority-government-parliament-distinct","claim:authority-ministerial-accountability"]},
+    {"id":"relation:home-civil-service-supports-government","fromId":"body:home-civil-service","toId":"body:uk-government","relationType":"supports","planeIds":["plane:delivery","plane:mandate"],"claimIds":["claim:authority-civil-service"]},
+    {"id":"relation:hmrc-treasury-distinct-tax-roles","fromId":"body:hm-treasury","toId":"body:hmrc","relationType":"distinct-policy-and-administration-roles","planeIds":["plane:money"],"claimIds":["claim:money-tax-policy-administration"]},
+    {"id":"relation:hmt-controls-departments","fromId":"body:hm-treasury","toId":"body:public-bodies-departments","relationType":"applies-spending-control-within-remit","planeIds":["plane:money"],"claimIds":["claim:money-estimates","claim:money-treasury-role"]},
+    {"id":"relation:ico-reviews-information-complaints","fromId":"body:information-commissioner","toId":"body:public-bodies-departments","relationType":"reviews-eligible-information-complaints","planeIds":["plane:remedy"],"claimIds":["claim:remedy-ico"]},
+    {"id":"relation:lords-constituent-parliament","fromId":"body:house-lords","toId":"body:uk-parliament","relationType":"constituent-of","planeIds":["plane:law","plane:mandate"],"claimIds":["claim:authority-crown-in-parliament"]},
+    {"id":"relation:lgsco-complaints-england-local","fromId":"body:local-government-social-care-ombudsman","toId":"body:local-government-england","relationType":"investigates-eligible-complaints-within-remit","planeIds":["plane:remedy"],"claimIds":["claim:remedy-lgsco"]},
+    {"id":"relation:nao-audits-remit","fromId":"body:national-audit-office","toId":"body:public-bodies-departments","relationType":"audits-within-remit","planeIds":["plane:money"],"claimIds":["claim:money-nao"]},
+    {"id":"relation:ni-assembly-framework","fromId":"body:uk-parliament","toId":"body:northern-ireland-assembly","relationType":"establishes-competence-framework","planeIds":["plane:jurisdiction","plane:law"],"claimIds":["claim:jurisdiction-northern-ireland"]},
+    {"id":"relation:ni-assembly-scrutinises-executive","fromId":"body:northern-ireland-assembly","toId":"body:northern-ireland-executive","relationType":"legislates-and-scrutinises-within-competence","planeIds":["plane:jurisdiction","plane:mandate"],"claimIds":["claim:jurisdiction-northern-ireland"]},
+    {"id":"relation:ni-executive-local-system","fromId":"body:northern-ireland-executive","toId":"body:local-government-northern-ireland","relationType":"nation-specific-framework","planeIds":["plane:delivery","plane:jurisdiction"],"claimIds":["claim:jurisdiction-local-four-nations"]},
+    {"id":"relation:obr-forecasts","fromId":"body:office-budget-responsibility","toId":"body:uk-parliament","relationType":"publishes-independent-analysis-for","planeIds":["plane:money"],"claimIds":["claim:money-obr"]},
+    {"id":"relation:ons-executive-office-uksa","fromId":"body:office-national-statistics","toId":"body:uk-statistics-authority","relationType":"executive-office-of","planeIds":["plane:delivery"],"claimIds":["claim:delivery-official-statistics"]},
+    {"id":"relation:pac-scrutinises-accounts","fromId":"body:public-accounts-committee","toId":"body:public-bodies-departments","relationType":"scrutinises-value-for-money-within-remit","planeIds":["plane:money","plane:mandate"],"claimIds":["claim:money-pac"]},
+    {"id":"relation:parliament-authorises-public-money","fromId":"body:uk-parliament","toId":"body:hm-treasury","relationType":"authorises-tax-and-spending","planeIds":["plane:money"],"claimIds":["claim:money-parliamentary-authority"]},
+    {"id":"relation:phso-complaints-government","fromId":"body:parliamentary-health-service-ombudsman","toId":"body:public-bodies-departments","relationType":"investigates-eligible-complaints","planeIds":["plane:remedy"],"claimIds":["claim:remedy-phso"]},
+    {"id":"relation:bank-psr-distinct-roles","fromId":"body:bank-of-england","toId":"body:payment-systems-regulator","relationType":"operational-and-regulatory-roles-distinct-no-psr-authority-over-bank-asserted","planeIds":["plane:money"],"claimIds":["claim:money-payment-regulator"]},
+    {"id":"relation:scotland-framework","fromId":"body:uk-parliament","toId":"body:scottish-parliament","relationType":"establishes-competence-framework","planeIds":["plane:jurisdiction","plane:law"],"claimIds":["claim:jurisdiction-scotland"]},
+    {"id":"relation:scotland-government-local-system","fromId":"body:scottish-government","toId":"body:local-government-scotland","relationType":"nation-specific-framework","planeIds":["plane:delivery","plane:jurisdiction"],"claimIds":["claim:jurisdiction-local-four-nations"]},
+    {"id":"relation:scotland-parliament-scrutinises-government","fromId":"body:scottish-parliament","toId":"body:scottish-government","relationType":"legislates-and-scrutinises-within-competence","planeIds":["plane:jurisdiction","plane:mandate"],"claimIds":["claim:jurisdiction-scotland"]},
+    {"id":"relation:uk-government-england-local-system","fromId":"body:uk-government","toId":"body:local-government-england","relationType":"england-framework-subject-to-law","planeIds":["plane:delivery","plane:jurisdiction"],"claimIds":["claim:jurisdiction-england-devolution-2026","claim:jurisdiction-local-four-nations"]},
+    {"id":"relation:uksc-hears-eligible-appeals","fromId":"body:uk-supreme-court","toId":"body:judiciary-england-wales","relationType":"hears-eligible-appeals-from","planeIds":["plane:law","plane:remedy"],"claimIds":["claim:law-uk-supreme-court"]},
+    {"id":"relation:wales-framework","fromId":"body:uk-parliament","toId":"body:senedd","relationType":"establishes-competence-framework","planeIds":["plane:jurisdiction","plane:law"],"claimIds":["claim:jurisdiction-wales"]},
+    {"id":"relation:welsh-government-local-system","fromId":"body:welsh-government","toId":"body:local-government-wales","relationType":"nation-specific-framework","planeIds":["plane:delivery","plane:jurisdiction"],"claimIds":["claim:jurisdiction-local-four-nations"]},
+    {"id":"relation:senedd-scrutinises-welsh-government","fromId":"body:senedd","toId":"body:welsh-government","relationType":"legislates-and-scrutinises-within-competence","planeIds":["plane:jurisdiction","plane:mandate"],"claimIds":["claim:jurisdiction-wales"]}
+  ],
+  "flows": [
+    {
+      "id": "flow:confidence-to-government",
+      "name": "Representation, confidence and government",
+      "planeIds": ["plane:mandate"],
+      "jurisdiction": "United Kingdom",
+      "entry": "A UK general election is held under the applicable election law.",
+      "exit": "A government remains accountable to Parliament and dependent on Commons confidence.",
+      "steps": [
+        {"order":1,"name":"Election returns the House of Commons","bodyIds":["body:house-commons"],"claimIds":["claim:authority-election-confidence"],"caveat":"This atlas has no party, candidate or result data."},
+        {"order":2,"name":"Crown performs the constitutional appointment role","bodyIds":["body:crown","body:uk-government"],"claimIds":["claim:authority-crown-government","claim:authority-election-confidence"],"caveat":"Conventions cannot be reduced to a party-seat algorithm."},
+        {"order":3,"name":"Government coordinates minister-led departments and functions within remit","bodyIds":["body:cabinet","body:public-bodies-departments","body:uk-government"],"claimIds":["claim:authority-ministerial-accountability"],"caveat":"Public bodies have body-specific independence and accountability; no universal Cabinet direction or current officeholder is encoded."},
+        {"order":4,"name":"Parliament scrutinises government","bodyIds":["body:uk-government","body:uk-parliament"],"claimIds":["claim:authority-government-parliament-distinct"],"caveat":"Scrutiny mechanisms vary and are not exhaustively mapped."}
+      ]
+    },
+    {
+      "id": "flow:primary-legislation",
+      "name": "UK primary legislation",
+      "planeIds": ["plane:law", "plane:mandate"],
+      "jurisdiction": "United Kingdom with bill-specific territorial extent",
+      "entry": "A Bill enters the applicable parliamentary route.",
+      "exit": "An approved Bill receives Royal Assent and becomes an Act, with commencement still to be checked.",
+      "steps": [
+        {"order":1,"name":"Bill is introduced","bodyIds":["body:house-commons","body:house-lords"],"claimIds":["claim:law-primary"],"caveat":"Starting House and procedure depend on Bill type."},
+        {"order":2,"name":"Parliamentary stages and agreement","bodyIds":["body:house-commons","body:house-lords"],"claimIds":["claim:law-primary"],"caveat":"Detailed procedure is outside this finite overview."},
+        {"order":3,"name":"Royal Assent","bodyIds":["body:crown","body:uk-parliament"],"claimIds":["claim:authority-crown-in-parliament","claim:law-primary"],"caveat":"Assent does not mean every provision commences immediately."},
+        {"order":4,"name":"Status and effects checked","bodyIds":["body:public-bodies-departments"],"claimIds":["claim:delivery-legislation-status"],"caveat":"Amendments, commencement, extent and outstanding effects remain provision-specific."}
+      ]
+    },
+    {
+      "id": "flow:delegated-legislation",
+      "name": "Statutory-instrument route",
+      "planeIds": ["plane:law"],
+      "jurisdiction": "Instrument-specific",
+      "entry": "An enabling Act supplies a delegated power.",
+      "exit": "An instrument is made and follows the specified procedure, subject to status checks.",
+      "steps": [
+        {"order":1,"name":"Locate enabling power","bodyIds":["body:uk-parliament"],"claimIds":["claim:law-delegated"],"caveat":"No power is inferred from an institutional role page."},
+        {"order":2,"name":"Draft within the power and competence","bodyIds":["body:public-bodies-departments"],"claimIds":["claim:law-delegated"],"caveat":"Maker, consultation and territorial rules vary."},
+        {"order":3,"name":"Follow specified statutory-instrument procedure","bodyIds":["body:uk-parliament"],"claimIds":["claim:law-delegated"],"caveat":"Affirmative, negative and other routes are not interchangeable."},
+        {"order":4,"name":"Check made, laid, commenced and amended state","bodyIds":["body:public-bodies-departments"],"claimIds":["claim:delivery-legislation-status"],"caveat":"A publication page is not proof of current force."}
+      ]
+    },
+    {
+      "id": "flow:devolution-competence-routing",
+      "name": "Devolution competence routing",
+      "planeIds": ["plane:jurisdiction", "plane:law"],
+      "jurisdiction": "Scotland, Wales or Northern Ireland",
+      "entry": "A proposed function or provision has an exact legal text and territorial application.",
+      "exit": "The relevant statutory competence test and institution-specific procedure are identified, or the map records an unknown.",
+      "steps": [
+        {"order":1,"name":"Identify territory and institution","bodyIds":["body:northern-ireland-assembly","body:scottish-parliament","body:senedd"],"claimIds":["claim:jurisdiction-asymmetric"],"caveat":"A policy topic alone cannot decide this step."},
+        {"order":2,"name":"Apply the settlement's exact competence test","bodyIds":["body:northern-ireland-assembly","body:scottish-parliament","body:senedd"],"claimIds":["claim:jurisdiction-northern-ireland","claim:jurisdiction-scotland","claim:jurisdiction-wales"],"caveat":"Reservations, restrictions, protected enactments and other limits differ."},
+        {"order":3,"name":"Use the legislature or executive route within competence","bodyIds":["body:northern-ireland-assembly","body:northern-ireland-executive","body:scottish-government","body:scottish-parliament","body:senedd","body:welsh-government"],"claimIds":["claim:jurisdiction-asymmetric"],"caveat":"This atlas does not decide competence for a live proposal."},
+        {"order":4,"name":"Keep local-government route nation-specific","bodyIds":["body:local-government-northern-ireland","body:local-government-scotland","body:local-government-wales"],"claimIds":["claim:jurisdiction-local-four-nations"],"caveat":"England's council guide is not reused for devolved nations."}
+      ]
+    },
+    {
+      "id": "flow:tax-policy-to-administration",
+      "name": "Central tax policy to administration",
+      "planeIds": ["plane:law", "plane:money"],
+      "jurisdiction": "UK central taxes, subject to tax-specific and devolved scope",
+      "entry": "A policy proposal is developed under the applicable fiscal and legal process.",
+      "exit": "HMRC administers an enacted and commenced rule through its statutory systems and guidance.",
+      "steps": [
+        {"order":1,"name":"Treasury leads strategic tax policy","bodyIds":["body:hm-treasury"],"claimIds":["claim:money-tax-policy-administration"],"caveat":"This map includes no current rate or Budget prediction."},
+        {"order":2,"name":"Independent fiscal analysis informs the fiscal event","bodyIds":["body:office-budget-responsibility"],"claimIds":["claim:money-obr"],"caveat":"Forecasting does not authorise tax."},
+        {"order":3,"name":"Parliament provides legal authority","bodyIds":["body:house-commons","body:uk-parliament"],"claimIds":["claim:money-parliamentary-authority"],"caveat":"Tax-specific procedure and territorial scope must be checked."},
+        {"order":4,"name":"HMRC implements and administers","bodyIds":["body:hmrc"],"claimIds":["claim:money-hmrc-role"],"caveat":"No liability calculation, filing or account access occurs here."},
+        {"order":5,"name":"Review and appeal doors remain distinct","bodyIds":["body:first-tier-tax-tribunal","body:hmrc"],"claimIds":["claim:remedy-tax-review-appeal","claim:remedy-tax-tribunal"],"caveat":"Deadlines and eligibility vary by decision."}
+      ]
+    },
+    {
+      "id": "flow:spending-authority",
+      "name": "Plan to Parliamentary Supply",
+      "planeIds": ["plane:money"],
+      "jurisdiction": "United Kingdom central government",
+      "entry": "Government develops fiscal and departmental spending plans.",
+      "exit": "Parliament authorises bounded resources and cash through Supply and appropriation.",
+      "steps": [
+        {"order":1,"name":"Fiscal and spending plan","bodyIds":["body:hm-treasury","body:uk-government"],"claimIds":["claim:money-treasury-role"],"caveat":"A plan is not authority or outturn."},
+        {"order":2,"name":"Independent forecast and analysis","bodyIds":["body:office-budget-responsibility"],"claimIds":["claim:money-obr"],"caveat":"Forecasts do not grant Supply."},
+        {"order":3,"name":"Departments present Estimates","bodyIds":["body:hm-treasury","body:public-bodies-departments"],"claimIds":["claim:money-estimates"],"caveat":"Amounts have specific boundaries and periods."},
+        {"order":4,"name":"Commons and Parliament approve Supply","bodyIds":["body:house-commons","body:uk-parliament"],"claimIds":["claim:money-parliamentary-authority"],"caveat":"This is not a retail payment instruction."},
+        {"order":5,"name":"Appropriation bounds use","bodyIds":["body:hm-treasury","body:public-bodies-departments"],"claimIds":["claim:money-estimates"],"caveat":"Virements, contingencies and supplementary routes are not exhaustively mapped."}
+      ]
+    },
+    {
+      "id": "flow:central-fund-issue",
+      "name": "Authorised central-fund issue",
+      "planeIds": ["plane:money"],
+      "jurisdiction": "United Kingdom central funds",
+      "entry": "Parliamentary and statutory authority exists for an issue.",
+      "exit": "Cash is issued under the public-finance control chain for use by the authorised body.",
+      "steps": [
+        {"order":1,"name":"Authority and appropriation exist","bodyIds":["body:uk-parliament"],"claimIds":["claim:money-parliamentary-authority"],"caveat":"No authority is inferred from a payment request."},
+        {"order":2,"name":"Central fund records the public cash position","bodyIds":["body:bank-of-england","body:hm-treasury"],"claimIds":["claim:money-consolidated-fund"],"caveat":"The fund is not a labelled-pound tracing ledger."},
+        {"order":3,"name":"Comptroller function grants credit for an authorised issue","bodyIds":["body:comptroller-auditor-general"],"claimIds":["claim:money-cag-credit"],"caveat":"Exact statutory provision and fund must be checked."},
+        {"order":4,"name":"Treasury issues within authority","bodyIds":["body:hm-treasury"],"claimIds":["claim:money-cag-credit","claim:money-treasury-role"],"caveat":"Issue is distinct from departmental outturn and service delivery."},
+        {"order":5,"name":"Department accounts for use","bodyIds":["body:public-bodies-departments"],"claimIds":["claim:money-estimates","claim:money-nao"],"caveat":"Accounts and audit follow separate records and periods."}
+      ]
+    },
+    {
+      "id": "flow:payment-and-banking-operations",
+      "name": "Operational banking and payment rails",
+      "planeIds": ["plane:delivery", "plane:money"],
+      "jurisdiction": "United Kingdom",
+      "entry": "A public body already has legal authority and an operational payment need.",
+      "exit": "A banking or payment system carries the transaction under its own participation and control framework.",
+      "steps": [
+        {"order":1,"name":"Separate authority from payment instruction","bodyIds":["body:hm-treasury","body:public-bodies-departments"],"claimIds":["claim:money-parliamentary-authority"],"caveat":"The atlas creates neither."},
+        {"order":2,"name":"Government Banking Service supports public bodies","bodyIds":["body:government-banking-service"],"claimIds":["claim:money-gbs"],"caveat":"No account or provider credential is exposed."},
+        {"order":3,"name":"Payment systems exchange and settle obligations","bodyIds":["body:bank-of-england"],"claimIds":["claim:money-rtgs-chaps"],"caveat":"RTGS and CHAPS access is not provided."},
+        {"order":4,"name":"Regulation remains distinct from operation","bodyIds":["body:payment-systems-regulator"],"claimIds":["claim:money-payment-regulator"],"caveat":"No regulatory determination is made."}
+      ]
+    },
+    {
+      "id": "flow:digital-service-delivery",
+      "name": "Authorised function to digital service",
+      "planeIds": ["plane:delivery", "plane:law"],
+      "jurisdiction": "Service-specific",
+      "entry": "A public body has an identified function, legal basis, controller and service owner.",
+      "exit": "A service uses selected operational rails while authority and accountability stay with the responsible body.",
+      "steps": [
+        {"order":1,"name":"Identify body, function and legal basis","bodyIds":["body:public-bodies-departments"],"claimIds":["claim:delivery-data-law","claim:delivery-departments"],"caveat":"A directory or API listing does not prove authority."},
+        {"order":2,"name":"Design against service and technology standards","bodyIds":["body:government-digital-service","body:public-bodies-departments"],"claimIds":["claim:delivery-service-standard"],"caveat":"Standards are not silently promoted to legislation."},
+        {"order":3,"name":"Select identity, forms, messaging or payment capabilities","bodyIds":["body:government-digital-service"],"claimIds":["claim:delivery-forms","claim:delivery-notify","claim:delivery-one-login","claim:delivery-pay"],"caveat":"This atlas embeds none of those functions."},
+        {"order":4,"name":"Publish API or data discovery metadata where appropriate","bodyIds":["body:government-digital-service"],"claimIds":["claim:delivery-api-catalogue","claim:delivery-open-data"],"caveat":"Rights, quality and availability remain dataset-specific."},
+        {"order":5,"name":"Retain accountable decision and remedy routes","bodyIds":["body:public-bodies-departments"],"claimIds":["claim:delivery-rails-not-authority","claim:remedy-routes-distinct"],"caveat":"Technology does not become the legal decision-maker by carrying data."}
+      ]
+    },
+    {
+      "id": "flow:redress-route-selection",
+      "name": "Typed redress route selection",
+      "planeIds": ["plane:remedy"],
+      "jurisdiction": "Matter-specific across UK legal systems",
+      "entry": "A person identifies the exact decision, service failure, information request or alleged public-law error.",
+      "exit": "The person reaches the official start page for a potentially relevant route and checks current eligibility and deadline.",
+      "steps": [
+        {"order":1,"name":"Classify issue without merging routes","bodyIds":["body:public-bodies-departments"],"claimIds":["claim:remedy-routes-distinct"],"caveat":"The atlas does not determine eligibility."},
+        {"order":2,"name":"Protect any statutory review or appeal deadline","bodyIds":["body:first-tier-tax-tribunal","body:hmrc"],"claimIds":["claim:remedy-tax-review-appeal","claim:remedy-tax-tribunal"],"caveat":"A complaint may not stop an appeal clock."},
+        {"order":3,"name":"Use complaint or ombudsman route only within remit","bodyIds":["body:northern-ireland-ombudsman","body:parliamentary-health-service-ombudsman","body:public-services-ombudsman-wales","body:scottish-public-services-ombudsman"],"claimIds":["claim:remedy-nipso","claim:remedy-phso","claim:remedy-psow","claim:remedy-spso"],"caveat":"Prior complaint steps and territorial jurisdiction vary."},
+        {"order":4,"name":"Use information-rights route for recorded information","bodyIds":["body:information-commissioner"],"claimIds":["claim:remedy-foi","claim:remedy-ico"],"caveat":"Exemptions and internal-review requirements vary."},
+        {"order":5,"name":"Seek legal advice for judicial review","bodyIds":["body:judiciary-england-wales"],"claimIds":["claim:remedy-judicial-review"],"caveat":"The mapped CPR route is England and Wales only and strict time limits apply."}
+      ]
+    }
+  ],
+  "rails": [
+    {"id":"rail:authority-confidence","name":"Election and Commons-confidence rail","railType":"mandate","description":"Connects representation, constitutional appointment, ministerial direction and parliamentary accountability without party or person data.","bodyIds":["body:crown","body:house-commons","body:uk-government","body:uk-parliament"],"claimIds":["claim:authority-election-confidence","claim:authority-government-parliament-distinct"],"authorityBoundary":"constitutional-route-not-automated-rule"},
+    {"id":"rail:authority-devolution","name":"Asymmetric devolution rail","railType":"jurisdiction","description":"Routes an exact provision through the relevant statutory competence framework rather than topic matching.","bodyIds":["body:northern-ireland-assembly","body:scottish-parliament","body:senedd","body:uk-parliament"],"claimIds":["claim:jurisdiction-asymmetric"],"authorityBoundary":"statutory-tests-required"},
+    {"id":"rail:authority-law","name":"Primary and delegated law rail","railType":"law","description":"Separates Bill, Act, enabling power, statutory instrument, commencement and status.","bodyIds":["body:crown","body:house-commons","body:house-lords","body:uk-parliament"],"claimIds":["claim:delivery-legislation-status","claim:law-delegated","claim:law-primary"],"authorityBoundary":"legal-instrument-route"},
+    {"id":"rail:data-statistics","name":"Data discovery and official-statistics rail","railType":"data","description":"Keeps API discovery, dataset publication, statistics governance, source rights and personal-data law distinct.","bodyIds":["body:government-digital-service","body:information-commissioner","body:office-national-statistics","body:uk-statistics-authority"],"claimIds":["claim:delivery-data-law","claim:delivery-official-statistics","claim:delivery-open-data","claim:delivery-source-rights"],"authorityBoundary":"does-not-confer-authority"},
+    {"id":"rail:money-central-fund","name":"Supply, central-fund credit and issue rail","railType":"money-authority","description":"Connects Parliamentary authority, the Consolidated Fund, C&AG credit, Treasury issue and departmental accounting.","bodyIds":["body:bank-of-england","body:comptroller-auditor-general","body:hm-treasury","body:public-bodies-departments","body:uk-parliament"],"claimIds":["claim:money-cag-credit","claim:money-consolidated-fund","claim:money-estimates","claim:money-parliamentary-authority"],"authorityBoundary":"public-money-authority-chain"},
+    {"id":"rail:money-fiscal","name":"Forecast and fiscal-policy rail","railType":"money-authority","description":"Separates independent analysis, Treasury policy, parliamentary authority and HMRC administration.","bodyIds":["body:hmrc","body:hm-treasury","body:office-budget-responsibility","body:uk-parliament"],"claimIds":["claim:money-obr","claim:money-tax-policy-administration"],"authorityBoundary":"forecast-is-not-authority"},
+    {"id":"rail:money-payments","name":"Banking and payment-settlement rail","railType":"money-operation","description":"Separates GBS banking, RTGS settlement, CHAPS operation and payment-system regulation from Supply and liability.","bodyIds":["body:bank-of-england","body:government-banking-service","body:payment-systems-regulator"],"claimIds":["claim:money-gbs","claim:money-payment-regulator","claim:money-rtgs-chaps"],"authorityBoundary":"does-not-create-tax-or-spending-authority"},
+    {"id":"rail:oversight-audit","name":"Accounts, audit and parliamentary scrutiny rail","railType":"money-oversight","description":"Separates departmental accounts, NAO audit and Public Accounts Committee scrutiny.","bodyIds":["body:national-audit-office","body:public-accounts-committee","body:public-bodies-departments"],"claimIds":["claim:money-nao","claim:money-pac"],"authorityBoundary":"oversight-does-not-set-policy-objectives"},
+    {"id":"rail:remedy-information","name":"Information-rights rail","railType":"remedy","description":"Routes a recorded-information request through the covered authority, internal steps and eligible ICO complaint.","bodyIds":["body:information-commissioner","body:public-bodies-departments"],"claimIds":["claim:remedy-foi","claim:remedy-ico"],"authorityBoundary":"not-a-merits-appeal-or-service-complaint"},
+    {"id":"rail:remedy-public-decision","name":"Decision and public-service redress rail","railType":"remedy","description":"Keeps complaints, statutory reviews, appeals, ombudsmen and judicial review as typed alternatives.","bodyIds":["body:first-tier-tax-tribunal","body:judiciary-england-wales","body:parliamentary-health-service-ombudsman","body:public-bodies-departments"],"claimIds":["claim:remedy-routes-distinct"],"authorityBoundary":"eligibility-and-deadlines-not-determined"},
+    {"id":"rail:service-shared-digital","name":"Shared digital-service rail","railType":"service","description":"Maps Service Standard, One Login, Notify, Pay, Forms and API discovery as optional operational capabilities.","bodyIds":["body:government-digital-service","body:public-bodies-departments"],"claimIds":["claim:delivery-rails-not-authority","claim:delivery-service-standard"],"authorityBoundary":"does-not-confer-authority"}
+  ],
+  "redressRoutes": [
+    {"id":"redress:foi-ico","name":"FOI request, internal steps and ICO complaint","routeType":"information-rights","jurisdiction":"Covered UK public authorities subject to the applicable information regime","startUrl":"https://ico.org.uk/make-a-complaint/foi-and-eir-complaints/foi-and-eir-complaints/","bodyIds":["body:information-commissioner","body:public-bodies-departments"],"claimIds":["claim:remedy-foi","claim:remedy-ico"],"prerequisites":["identify the applicable information regime","follow the public authority's request and internal-review route where required"],"deadlineRule":"varies-check-current-official-rule","automaticEscalation":false,"deadlineCalculated":false,"eligibilityDetermined":false,"legalAdvice":false},
+    {"id":"redress:hmrc-service-complaint","name":"HMRC service complaint","routeType":"service-complaint","jurisdiction":"HMRC service within the published complaint remit","startUrl":"https://www.gov.uk/complain-about-hmrc","bodyIds":["body:hmrc"],"claimIds":["claim:remedy-service-complaint"],"prerequisites":["separate service dissatisfaction from a challenge to a tax decision","check whether another deadline must be protected"],"deadlineRule":"varies-check-current-official-rule","automaticEscalation":false,"deadlineCalculated":false,"eligibilityDetermined":false,"legalAdvice":false},
+    {"id":"redress:hmrc-statutory-review","name":"HMRC statutory review where offered or available","routeType":"statutory-review","jurisdiction":"Decision-specific UK tax route","startUrl":"https://www.gov.uk/tax-appeals","bodyIds":["body:hmrc"],"claimIds":["claim:remedy-tax-review-appeal"],"prerequisites":["identify the exact decision and notice","check whether review is offered or available and protect the stated deadline"],"deadlineRule":"varies-check-current-official-rule","automaticEscalation":false,"deadlineCalculated":false,"eligibilityDetermined":false,"legalAdvice":false},
+    {"id":"redress:judicial-review-england-wales","name":"Judicial review in England and Wales","routeType":"judicial-review","jurisdiction":"England and Wales","startUrl":"https://www.justice.gov.uk/courts/procedure-rules/civil/rules/part54","bodyIds":["body:judiciary-england-wales"],"claimIds":["claim:remedy-judicial-review"],"prerequisites":["obtain current legal advice","check standing, alternative remedies, permission and urgency"],"deadlineRule":"strict-and-varies-check-current-law-and-procedure","automaticEscalation":false,"deadlineCalculated":false,"eligibilityDetermined":false,"legalAdvice":false},
+    {"id":"redress:local-government-social-care-ombudsman","name":"Local Government and Social Care Ombudsman","routeType":"ombudsman","jurisdiction":"Councils and certain services in England within remit","startUrl":"https://www.lgo.org.uk/how-to-complain","bodyIds":["body:local-government-social-care-ombudsman"],"claimIds":["claim:remedy-lgsco"],"prerequisites":["check body, provider and subject jurisdiction","complete prior complaint steps where required"],"deadlineRule":"varies-check-current-official-rule","automaticEscalation":false,"deadlineCalculated":false,"eligibilityDetermined":false,"legalAdvice":false},
+    {"id":"redress:northern-ireland-ombudsman","name":"Northern Ireland Public Services Ombudsman","routeType":"ombudsman","jurisdiction":"Northern Ireland bodies and matters within remit","startUrl":"https://www.nipso.org.uk/make-complaint/how-make-complaint","bodyIds":["body:northern-ireland-ombudsman"],"claimIds":["claim:remedy-nipso"],"prerequisites":["check body and subject jurisdiction","complete prior complaint steps where required"],"deadlineRule":"varies-check-current-official-rule","automaticEscalation":false,"deadlineCalculated":false,"eligibilityDetermined":false,"legalAdvice":false},
+    {"id":"redress:phso","name":"Parliamentary and Health Service Ombudsman","routeType":"ombudsman","jurisdiction":"UK government departments and NHS in England within remit","startUrl":"https://www.ombudsman.org.uk/making-complaint","bodyIds":["body:parliamentary-health-service-ombudsman"],"claimIds":["claim:remedy-phso"],"prerequisites":["complete the organisation's complaint process where required","check jurisdiction and the Parliamentary route"],"deadlineRule":"varies-check-current-official-rule","automaticEscalation":false,"deadlineCalculated":false,"eligibilityDetermined":false,"legalAdvice":false},
+    {"id":"redress:scotland-ombudsman","name":"Scottish Public Services Ombudsman","routeType":"ombudsman","jurisdiction":"Scottish public services within remit","startUrl":"https://www.spso.org.uk/how-to-complain-about-public-service","bodyIds":["body:scottish-public-services-ombudsman"],"claimIds":["claim:remedy-spso"],"prerequisites":["check body and subject jurisdiction","complete prior complaint steps where required"],"deadlineRule":"varies-check-current-official-rule","automaticEscalation":false,"deadlineCalculated":false,"eligibilityDetermined":false,"legalAdvice":false},
+    {"id":"redress:tax-tribunal-appeal","name":"First-tier Tribunal tax appeal","routeType":"tribunal-appeal","jurisdiction":"Eligible UK tax decisions within tribunal jurisdiction","startUrl":"https://www.gov.uk/courts-tribunals/first-tier-tribunal-tax","bodyIds":["body:first-tier-tax-tribunal","body:hmrc"],"claimIds":["claim:remedy-tax-review-appeal","claim:remedy-tax-tribunal"],"prerequisites":["identify the appealable decision and applicable procedure","protect the decision-specific deadline"],"deadlineRule":"varies-check-current-official-rule","automaticEscalation":false,"deadlineCalculated":false,"eligibilityDetermined":false,"legalAdvice":false},
+    {"id":"redress:wales-ombudsman","name":"Public Services Ombudsman for Wales","routeType":"ombudsman","jurisdiction":"Welsh public services within remit","startUrl":"https://www.ombudsman.wales/how-to-complain/","bodyIds":["body:public-services-ombudsman-wales"],"claimIds":["claim:remedy-psow"],"prerequisites":["check body and subject jurisdiction","complete prior complaint steps where required"],"deadlineRule":"varies-check-current-official-rule","automaticEscalation":false,"deadlineCalculated":false,"eligibilityDetermined":false,"legalAdvice":false}
+  ],
+  "unknowns": [
+    {"id":"unknown:departmental-change","question":"Has a cited department, public body or service owner changed since the review date?","scope":"institutional and digital-service freshness","reason":"Live organisation directories and service ownership can change without changing the constitutional model.","sourceIds":["source:uk-government-organisations"],"reviewTrigger":"any owner, URL or machinery-of-government change"},
+    {"id":"unknown:devolution-competence","question":"Which legislature or executive has competence for a specific proposed provision?","scope":"proposal-specific devolution analysis","reason":"Competence depends on exact text, purpose, effect, reservations and settlement-specific restrictions.","sourceIds":["source:ni-act-1998","source:scotland-act-1998","source:wales-act-2006"],"reviewTrigger":"an exact proposal and current statutory analysis become available"},
+    {"id":"unknown:digital-participation","question":"Which public services currently use each shared digital product and under what data-controller arrangements?","scope":"service-by-service implementation","reason":"Product pages establish capability but not a complete participation, legal-basis or controller map.","sourceIds":["source:govuk-forms","source:govuk-notify","source:govuk-one-login","source:govuk-pay"],"reviewTrigger":"a bounded official service contract and privacy/legal-basis record is admitted"},
+    {"id":"unknown:legislation-current-effect","question":"Is each cited provision commenced, amended, extended and fully updated for a live matter?","scope":"provision-level legal status","reason":"Contents pages and a dated atlas cannot guarantee current provision status or resolve outstanding effects.","sourceIds":["source:legislation-status-guide"],"reviewTrigger":"before relying on a provision for an actual matter"},
+    {"id":"unknown:local-function-completeness","question":"Which exact council tier or body holds a particular function in each nation and locality?","scope":"four-nation local government","reason":"Structures, reorganisations and statutory functions vary; Phase 0 exposes entry points, not a complete council-power graph.","sourceIds":["source:england-councils","source:ni-local-government","source:scotland-local-government","source:wales-local-government"],"reviewTrigger":"a specific locality and function are selected for source-linked expansion"},
+    {"id":"unknown:public-money-trace","question":"Can a particular receipt be traced to a particular service expenditure?","scope":"pooled public money","reason":"Authority, accounts, funds and payments do not generally establish a labelled-pound path from one taxpayer to one service.","sourceIds":["source:government-banking-service","source:managing-public-money-2026","source:parliament-spending-taxation"],"reviewTrigger":"a statute or audited accounting record expressly establishes the link"},
+    {"id":"unknown:redress-deadline","question":"What route, eligibility rule and deadline applies to an actual decision or complaint?","scope":"matter-specific redress","reason":"Complaint, review, appeal, ombudsman, information-rights and judicial-review rules differ and can change.","sourceIds":["source:first-tier-tax-tribunal","source:hmrc-tax-appeals","source:ico-official-information-complaint","source:phso-complaints"],"reviewTrigger":"the exact notice, jurisdiction and current official procedure are available"},
+    {"id":"unknown:statistics-revision","question":"Has an official statistic or dataset been revised, reclassified or superseded?","scope":"data and statistics freshness","reason":"Dataset discovery and institutional status do not freeze methods, quality or revision history.","sourceIds":["source:data-gov-uk","source:ons-about","source:uk-statistics-authority-about"],"reviewTrigger":"before importing any statistic or dataset into a later contract"},
+    {"id":"unknown:taxsorted-upstream","question":"Have the selected TaxSorted records, rights, schema or release checkpoints changed since capture?","scope":"receipt-bound crosswalk freshness","reason":"The captures are digest-bound but the upstream datasets do not declare immutable snapshots and were already reviewed before acquisition.","sourceIds":[],"reviewTrigger":"TaxSorted publishes a new version, digest, rights statement, record ID or correction"}
+    ,
+    {"id":"unknown:tax-onward-appeal","question":"What permission and onward-appeal route applies after a First-tier Tribunal tax decision?","scope":"tax tribunal onward appeal","reason":"Phase 0 maps only the First-tier start door; Upper Tribunal and appellate-court permission routes are decision- and jurisdiction-specific.","sourceIds":["source:first-tier-tax-tribunal","source:uk-supreme-court-about"],"reviewTrigger":"a bounded official Upper Tribunal and onward-appeal source contract is added"}
+  ],
+  "relatedResources": [
+    {
+      "id": "resource:taxsorted-uk-system",
+      "title": "TaxSorted UK system maps",
+      "url": "https://taxsorted.io",
+      "relationship": "independent-non-official-receipt-bound-crosswalk",
+      "linkedRecordIds": ["bridge:taxsorted-public-funding", "bridge:taxsorted-tax-system"],
+      "duplicatedContent": false
+    },
+    {
+      "id": "resource:world-commons",
+      "title": "KINGDOM World Commons",
+      "url": "https://thekingdom.dev/commons.json",
+      "relationship": "related-jurisdiction-and-commons-context",
+      "linkedRecordIds": ["companies-house", "uk-ons", "uk-small-business-desk", "uk-trade-tariff"],
+      "duplicatedContent": false
+    }
+  ]
+}

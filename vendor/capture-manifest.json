@@ -1,0 +1,135 @@
+{
+  "schema": "kingdom.taxsorted-capture-manifest/0.1",
+  "capturedOn": "2026-08-21",
+  "captureMethod": "Exact public HTTP response bodies retained as UTF-8 JSON; response bodies are unmodified.",
+  "purpose": "Receipt-bound crosswalks to selected TaxSorted record IDs; never evidence for a government claim.",
+  "boundaryScope": "government-engine-public-projection",
+  "receiptMeaning": "SHA-256 establishes byte identity for the retained capture only; it is not a signature, authentication, truth proof, endorsement or availability guarantee.",
+  "sourceCommitObservedSeparately": "efb55c0081c992803bdd5ca891e1ef01f05bc32e",
+  "sourceCommitObservationMethod": "Read-only local repository origin/main inspection on the capture date; not an HTTP deployment receipt.",
+  "sourceCommitBoundByCaptureReceipt": false,
+  "releaseLedger": {
+    "bytes": 7833,
+    "path": "vendor/captures/taxsorted/open-data-releases.json",
+    "sha256": "sha256:b2378e2052e8aeae169f2ce3827fdc45b45cbc7719ad0a348a38efff1ac704f9",
+    "url": "https://api.taxsorted.io/v1/open-data/releases"
+  },
+  "datasets": [
+    {
+      "id": "taxsorted:uk-public-funding",
+      "baseUrl": "https://api.taxsorted.io/v1/public-funding/uk",
+      "checkpointId": "urn:taxsorted:release-checkpoint:uk-public-funding:2026-07-10.1",
+      "curationLicence": {
+        "name": "Creative Commons Attribution-ShareAlike 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "etagObservedSeparately": "\"sha256-8100d03e8d1d095ea2d3eea1cd237424d3b0bf11e13901018fdd52f55ec0d801\"",
+      "etagHeaderReceiptRetained": false,
+      "files": [
+        {
+          "bytes": 66953,
+          "kind": "dictionary",
+          "path": "vendor/captures/taxsorted/uk-public-funding/dictionary.json",
+          "sha256": "sha256:e125ea0231a694bcbea9d7d817f74206ca32f95a90a62811843e1d04c38dc9ce",
+          "url": "https://api.taxsorted.io/v1/public-funding/uk/dictionary"
+        },
+        {
+          "bytes": 326995,
+          "kind": "graph",
+          "path": "vendor/captures/taxsorted/uk-public-funding/graph.json",
+          "sha256": "sha256:8100d03e8d1d095ea2d3eea1cd237424d3b0bf11e13901018fdd52f55ec0d801",
+          "url": "https://api.taxsorted.io/v1/public-funding/uk/graph"
+        },
+        {
+          "bytes": 1293,
+          "kind": "manifest",
+          "path": "vendor/captures/taxsorted/uk-public-funding/manifest.json",
+          "sha256": "sha256:845f99da64fd9217a982f713db5a6dca863949fbcce11515e563453106fa579d",
+          "url": "https://api.taxsorted.io/v1/public-funding/uk/manifest"
+        },
+        {
+          "bytes": 24876,
+          "kind": "schema",
+          "path": "vendor/captures/taxsorted/uk-public-funding/schema.json",
+          "sha256": "sha256:5e6b15e720f4f65b9439f5c5688fced7c9c8c7f12ead9d9b23efb6503017bf54",
+          "url": "https://api.taxsorted.io/v1/public-funding/uk/schema"
+        }
+      ],
+      "immutableSnapshot": null,
+      "notComplete": true,
+      "publicationStatus": "open",
+      "publicationStatusSource": "retained-release-ledger",
+      "reviewedOn": "2026-07-10",
+      "rightsCaveat": "TaxSorted declares CC BY-SA for its curation. Applicable rights must be checked item by item; no blanket OGL, OPL, CC BY-SA or third-party licence is inferred for linked upstream material.",
+      "rightsDeclarationIndependentlyVerified": false,
+      "upstreamSourceBodiesRepublished": false,
+      "upstreamSourceRightsNotGrantedByThisCapture": true,
+      "version": "2026-07-10.1"
+    },
+    {
+      "id": "taxsorted:uk-tax-system",
+      "baseUrl": "https://api.taxsorted.io/v1/tax-system/uk",
+      "checkpointId": "urn:taxsorted:release-checkpoint:uk-tax-system:2026-07-10.2",
+      "curationLicence": {
+        "name": "Creative Commons Attribution-ShareAlike 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "etagObservedSeparately": "\"sha256-400bbe40cad2cfad3a755cb248263822e53d633c22ceb42f2f7d4b84ecd0cb99\"",
+      "etagHeaderReceiptRetained": false,
+      "files": [
+        {
+          "bytes": 49611,
+          "kind": "dictionary",
+          "path": "vendor/captures/taxsorted/uk-tax-system/dictionary.json",
+          "sha256": "sha256:4abfd3174aee765590c718f72ac367e9783a92dfea1e992075464372f2e227d2",
+          "url": "https://api.taxsorted.io/v1/tax-system/uk/dictionary"
+        },
+        {
+          "bytes": 286808,
+          "kind": "graph",
+          "path": "vendor/captures/taxsorted/uk-tax-system/graph.json",
+          "sha256": "sha256:400bbe40cad2cfad3a755cb248263822e53d633c22ceb42f2f7d4b84ecd0cb99",
+          "url": "https://api.taxsorted.io/v1/tax-system/uk/graph"
+        },
+        {
+          "bytes": 1021,
+          "kind": "manifest",
+          "path": "vendor/captures/taxsorted/uk-tax-system/manifest.json",
+          "sha256": "sha256:d94d25936dcceaeb7fca98d271db37a9b64dc0105621a64b940331456edf1ad1",
+          "url": "https://api.taxsorted.io/v1/tax-system/uk/manifest"
+        },
+        {
+          "bytes": 18273,
+          "kind": "schema",
+          "path": "vendor/captures/taxsorted/uk-tax-system/schema.json",
+          "sha256": "sha256:5fd46932c26c217335510ba308d0603e600acbf6952ecfbc07e4fddb4c9ace3f",
+          "url": "https://api.taxsorted.io/v1/tax-system/uk/schema"
+        }
+      ],
+      "immutableSnapshot": null,
+      "notComplete": true,
+      "publicationStatus": "open",
+      "publicationStatusSource": "retained-release-ledger",
+      "reviewedOn": "2026-07-10",
+      "rightsCaveat": "TaxSorted declares CC BY-SA for its curation. Applicable rights must be checked item by item; no blanket OGL, OPL, CC BY-SA or third-party licence is inferred for linked upstream material.",
+      "rightsDeclarationIndependentlyVerified": false,
+      "upstreamSourceBodiesRepublished": false,
+      "upstreamSourceRightsNotGrantedByThisCapture": true,
+      "version": "2026-07-10.2"
+    }
+  ],
+  "boundaries": {
+    "captureReceiptAuthenticatesPublisher": false,
+    "captureReceiptGuaranteesAvailability": false,
+    "captureReceiptProvesTruth": false,
+    "captureReceiptSigned": false,
+    "endorsement": false,
+    "fullProviderSchemaValidationPerformed": false,
+    "governmentEvidenceSource": false,
+    "official": false,
+    "runtimeDataTransfer": false,
+    "taxsortedContentUsedAsGovernmentEvidence": false,
+    "taxsortedRecordTextProjectedIntoGovernmentSnapshot": false,
+    "upstreamSourceBodyBytesRetained": false
+  }
+}

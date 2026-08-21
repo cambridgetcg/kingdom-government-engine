@@ -1,0 +1,36 @@
+[
+  {
+    "id": "bridge:taxsorted-public-funding",
+    "datasetId": "taxsorted:uk-public-funding",
+    "resourceId": "resource:taxsorted-uk-system",
+    "selectedRecordBindings": [
+      {"collection":"funds","recordId":"fund-devolved-block-grants","localIds":["flow:devolution-competence-routing","plane:jurisdiction"],"purpose":"crosswalk a separately modelled devolved-funding concept without importing record text"},
+      {"collection":"funds","recordId":"fund-uk-consolidated-fund","localIds":["flow:central-fund-issue","rail:money-central-fund"],"purpose":"crosswalk the central-fund node without using TaxSorted as authority evidence"},
+      {"collection":"fundingMechanisms","recordId":"mechanism-devolved-block-grants","localIds":["flow:devolution-competence-routing","plane:money"],"purpose":"crosswalk the devolved block-grant mechanism for later graph navigation"},
+      {"collection":"fundingMechanisms","recordId":"mechanism-parliamentary-supply","localIds":["flow:spending-authority","rail:money-central-fund"],"purpose":"crosswalk the Supply concept while official Parliament sources support the local claim"},
+      {"collection":"pipelineStages","recordId":"pipeline-accountability-accounts","localIds":["flow:central-fund-issue","rail:oversight-audit"],"purpose":"crosswalk the accounts stage without copying its description"},
+      {"collection":"pipelineStages","recordId":"pipeline-accountability-audit","localIds":["rail:oversight-audit"],"purpose":"crosswalk the audit stage without copying its description"},
+      {"collection":"pipelineStages","recordId":"pipeline-accountability-parliament","localIds":["rail:oversight-audit"],"purpose":"crosswalk the parliamentary-scrutiny stage without copying its description"},
+      {"collection":"pipelineStages","recordId":"pipeline-central-pool","localIds":["flow:central-fund-issue","rail:money-central-fund"],"purpose":"crosswalk pooling while retaining the local no-labelled-pound boundary"},
+      {"collection":"pipelineStages","recordId":"pipeline-central-revenue","localIds":["flow:tax-policy-to-administration","rail:money-fiscal"],"purpose":"crosswalk central revenue collection at a concept boundary only"},
+      {"collection":"pipelineStages","recordId":"pipeline-central-supply","localIds":["flow:spending-authority","rail:money-central-fund"],"purpose":"crosswalk the Supply stage for related-resource navigation"},
+      {"collection":"transparencyGaps","recordId":"gap-current-year-outturn-lag","localIds":["unknown:public-money-trace"],"purpose":"crosswalk a declared timing gap without importing its text as a local claim"},
+      {"collection":"transparencyGaps","recordId":"gap-four-nation-comparability","localIds":["unknown:local-function-completeness"],"purpose":"crosswalk a declared comparability gap without importing its text"},
+      {"collection":"transparencyGaps","recordId":"gap-pooled-pound-traceability","localIds":["unknown:public-money-trace"],"purpose":"crosswalk a declared traceability gap without using it as government evidence"}
+    ]
+  },
+  {
+    "id": "bridge:taxsorted-tax-system",
+    "datasetId": "taxsorted:uk-tax-system",
+    "resourceId": "resource:taxsorted-uk-system",
+    "selectedRecordBindings": [
+      {"collection":"frameworks","recordId":"framework-authority-chain","localIds":["flow:tax-policy-to-administration","rail:money-fiscal"],"purpose":"crosswalk TaxSorted's related authority-chain concept without importing its claim text"},
+      {"collection":"frameworks","recordId":"framework-challenge-separation","localIds":["flow:redress-route-selection","rail:remedy-public-decision"],"purpose":"crosswalk the related challenge-separation concept without importing record text"},
+      {"collection":"frameworks","recordId":"framework-plural-uk","localIds":["flow:devolution-competence-routing","plane:jurisdiction"],"purpose":"crosswalk the related plural-jurisdiction concept without importing record text"},
+      {"collection":"pipelineStages","recordId":"stage-law-and-policy","localIds":["flow:tax-policy-to-administration","plane:law"],"purpose":"crosswalk the tax law-and-policy stage while official sources support local claims"},
+      {"collection":"pipelineStages","recordId":"stage-payment-and-reconciliation","localIds":["flow:payment-and-banking-operations","rail:money-payments"],"purpose":"crosswalk the payment stage without exposing accounts or transaction capability"},
+      {"collection":"pipelineStages","recordId":"stage-review-and-appeal","localIds":["flow:redress-route-selection","redress:tax-tribunal-appeal"],"purpose":"crosswalk the review-and-appeal stage without determining eligibility"},
+      {"collection":"pipelineStages","recordId":"stage-service-complaint","localIds":["flow:redress-route-selection","redress:hmrc-service-complaint"],"purpose":"crosswalk the service-complaint stage while keeping it separate from appeal"}
+    ]
+  }
+]

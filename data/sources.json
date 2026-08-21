@@ -1,0 +1,662 @@
+[
+  {
+    "id": "source:budget-responsibility-act-2024",
+    "title": "Budget Responsibility Act 2024",
+    "url": "https://www.legislation.gov.uk/ukpga/2024/24/contents",
+    "publisher": "The National Archives",
+    "sourceClass": "legislation",
+    "jurisdiction": "United Kingdom",
+    "checkedOn": "2026-08-21",
+    "statusCaveat": "Check commencement, amendments and outstanding effects on the legislation record."
+  },
+  {
+    "id": "source:cabinet-manual",
+    "title": "The Cabinet Manual",
+    "url": "https://www.gov.uk/government/publications/cabinet-manual",
+    "publisher": "Cabinet Office",
+    "sourceClass": "official-guidance",
+    "jurisdiction": "United Kingdom",
+    "checkedOn": "2026-08-21",
+    "statusCaveat": "A 2011 guide to laws, conventions and rules; not itself legislation and not assumed current where later authority differs."
+  },
+  {
+    "id": "source:civil-procedure-rule-54",
+    "title": "Civil Procedure Rules Part 54: Judicial Review and Statutory Review",
+    "url": "https://www.justice.gov.uk/courts/procedure-rules/civil/rules/part54",
+    "publisher": "Ministry of Justice",
+    "sourceClass": "official-procedure",
+    "jurisdiction": "England and Wales",
+    "checkedOn": "2026-08-21",
+    "statusCaveat": "Procedure and time limits can change; this is not legal advice."
+  },
+  {
+    "id": "source:civil-service-code",
+    "title": "The Civil Service code",
+    "url": "https://www.gov.uk/government/publications/civil-service-code/the-civil-service-code",
+    "publisher": "Cabinet Office",
+    "sourceClass": "official-code",
+    "jurisdiction": "United Kingdom",
+    "checkedOn": "2026-08-21",
+    "statusCaveat": "A code governing civil servants; it is kept distinct from legislation and ministerial accountability."
+  },
+  {
+    "id": "source:data-gov-uk",
+    "title": "Find open data",
+    "url": "https://www.data.gov.uk/",
+    "publisher": "Government Digital Service",
+    "sourceClass": "official-data-service",
+    "jurisdiction": "United Kingdom",
+    "checkedOn": "2026-08-21",
+    "statusCaveat": "Dataset publishers, licences, update dates and quality vary by record."
+  },
+  {
+    "id": "source:exchequer-audit-act-1866",
+    "title": "Exchequer and Audit Departments Act 1866",
+    "url": "https://www.legislation.gov.uk/ukpga/Vict/29-30/39/contents",
+    "publisher": "The National Archives",
+    "sourceClass": "legislation",
+    "jurisdiction": "United Kingdom",
+    "checkedOn": "2026-08-21",
+    "statusCaveat": "Historic legislation has amendments and repeals; inspect the current effects and later legislation."
+  },
+  {
+    "id": "source:first-tier-tax-tribunal",
+    "title": "First-tier Tribunal (Tax)",
+    "url": "https://www.gov.uk/courts-tribunals/first-tier-tribunal-tax",
+    "publisher": "HM Courts & Tribunals Service",
+    "sourceClass": "official-procedure",
+    "jurisdiction": "United Kingdom",
+    "checkedOn": "2026-08-21",
+    "statusCaveat": "Jurisdiction, eligibility, forms and deadlines depend on the decision and current procedure."
+  },
+  {
+    "id": "source:foia-2000",
+    "title": "Freedom of Information Act 2000",
+    "url": "https://www.legislation.gov.uk/ukpga/2000/36/contents",
+    "publisher": "The National Archives",
+    "sourceClass": "legislation",
+    "jurisdiction": "United Kingdom",
+    "checkedOn": "2026-08-21",
+    "statusCaveat": "Application differs across public authorities and information regimes; inspect current status and exemptions."
+  },
+  {
+    "id": "source:government-banking-service",
+    "title": "Government Banking Service",
+    "url": "https://www.gov.uk/government/groups/government-banking-service-gbs",
+    "publisher": "HM Revenue & Customs",
+    "sourceClass": "official-role-page",
+    "jurisdiction": "United Kingdom",
+    "checkedOn": "2026-08-21",
+    "statusCaveat": "A service description, not authority for tax or expenditure."
+  },
+  {
+    "id": "source:government-resources-accounts-act-2000",
+    "title": "Government Resources and Accounts Act 2000",
+    "url": "https://www.legislation.gov.uk/ukpga/2000/20/contents",
+    "publisher": "The National Archives",
+    "sourceClass": "legislation",
+    "jurisdiction": "United Kingdom",
+    "checkedOn": "2026-08-21",
+    "statusCaveat": "Check commencement, amendments and outstanding effects on the legislation record."
+  },
+  {
+    "id": "source:govuk-api-catalogue",
+    "title": "GOV.UK API Catalogue",
+    "url": "https://www.api.gov.uk/",
+    "publisher": "Government Digital Service",
+    "sourceClass": "official-data-service",
+    "jurisdiction": "United Kingdom",
+    "checkedOn": "2026-08-21",
+    "statusCaveat": "Catalogue presence does not confer legal authority, guarantee availability or establish data quality."
+  },
+  {
+    "id": "source:govuk-forms",
+    "title": "GOV.UK Forms",
+    "url": "https://www.forms.service.gov.uk/",
+    "publisher": "Government Digital Service",
+    "sourceClass": "official-data-service",
+    "jurisdiction": "United Kingdom",
+    "checkedOn": "2026-08-21",
+    "statusCaveat": "Product capability is mapped only; this atlas provides no interactive form or submission route."
+  },
+  {
+    "id": "source:govuk-notify",
+    "title": "GOV.UK Notify",
+    "url": "https://www.notifications.service.gov.uk/",
+    "publisher": "Government Digital Service",
+    "sourceClass": "official-data-service",
+    "jurisdiction": "United Kingdom",
+    "checkedOn": "2026-08-21",
+    "statusCaveat": "Product capability is not a source of governmental authority."
+  },
+  {
+    "id": "source:govuk-one-login",
+    "title": "GOV.UK One Login",
+    "url": "https://www.sign-in.service.gov.uk/",
+    "publisher": "Government Digital Service",
+    "sourceClass": "official-data-service",
+    "jurisdiction": "United Kingdom",
+    "checkedOn": "2026-08-21",
+    "statusCaveat": "Authentication capability does not determine eligibility or legal authority for a service."
+  },
+  {
+    "id": "source:govuk-pay",
+    "title": "GOV.UK Pay",
+    "url": "https://www.payments.service.gov.uk/",
+    "publisher": "Government Digital Service",
+    "sourceClass": "official-data-service",
+    "jurisdiction": "United Kingdom",
+    "checkedOn": "2026-08-21",
+    "statusCaveat": "Payment processing is separate from legal liability, appropriation and entitlement."
+  },
+  {
+    "id": "source:hmrc-about",
+    "title": "About us: HM Revenue & Customs",
+    "url": "https://www.gov.uk/government/organisations/hm-revenue-customs/about",
+    "publisher": "HM Revenue & Customs",
+    "sourceClass": "official-role-page",
+    "jurisdiction": "United Kingdom",
+    "checkedOn": "2026-08-21",
+    "statusCaveat": "An institutional role description; tax powers and duties come from legislation."
+  },
+  {
+    "id": "source:hmrc-complaints",
+    "title": "Complain about HMRC",
+    "url": "https://www.gov.uk/complain-about-hmrc",
+    "publisher": "HM Revenue & Customs",
+    "sourceClass": "official-procedure",
+    "jurisdiction": "United Kingdom",
+    "checkedOn": "2026-08-21",
+    "statusCaveat": "A service complaint is not a substitute for a statutory appeal; routes and deadlines vary."
+  },
+  {
+    "id": "source:hmrc-tax-appeals",
+    "title": "Disagree with a tax decision",
+    "url": "https://www.gov.uk/tax-appeals",
+    "publisher": "HM Revenue & Customs",
+    "sourceClass": "official-procedure",
+    "jurisdiction": "United Kingdom",
+    "checkedOn": "2026-08-21",
+    "statusCaveat": "Review and appeal rights, eligibility and deadlines vary with the decision; this is not tax or legal advice."
+  },
+  {
+    "id": "source:hmt-about",
+    "title": "About us: HM Treasury",
+    "url": "https://www.gov.uk/government/organisations/hm-treasury/about",
+    "publisher": "HM Treasury",
+    "sourceClass": "official-role-page",
+    "jurisdiction": "United Kingdom",
+    "checkedOn": "2026-08-21",
+    "statusCaveat": "An institutional role description; powers and controls have separate legal and parliamentary sources."
+  },
+  {
+    "id": "source:how-government-works",
+    "title": "How government works",
+    "url": "https://www.gov.uk/government/how-government-works",
+    "publisher": "Cabinet Office",
+    "sourceClass": "official-role-page",
+    "jurisdiction": "United Kingdom",
+    "checkedOn": "2026-08-21",
+    "statusCaveat": "A high-level role description; no current officeholder names are imported."
+  },
+  {
+    "id": "source:ico-official-information-complaint",
+    "title": "Make a complaint about official information",
+    "url": "https://ico.org.uk/make-a-complaint/foi-and-eir-complaints/foi-and-eir-complaints/",
+    "publisher": "Information Commissioner's Office",
+    "sourceClass": "official-procedure",
+    "jurisdiction": "United Kingdom",
+    "checkedOn": "2026-08-21",
+    "statusCaveat": "Internal review and complaint steps, eligibility and deadlines vary by information regime."
+  },
+  {
+    "id": "source:judicial-independence",
+    "title": "Judicial independence",
+    "url": "https://www.judiciary.uk/about-the-judiciary/our-justice-system/jud-acc-ind/independence/",
+    "publisher": "Courts and Tribunals Judiciary",
+    "sourceClass": "official-role-page",
+    "jurisdiction": "England and Wales",
+    "checkedOn": "2026-08-21",
+    "statusCaveat": "This page explains constitutional principle; court structure and procedure differ across UK jurisdictions."
+  },
+  {
+    "id": "source:managing-public-money-2026",
+    "title": "Managing Public Money, April 2026",
+    "url": "https://assets.publishing.service.gov.uk/media/69e0b17861d2e8e9b9e42e13/Managing_Public_Money_-_April_2026.pdf",
+    "publisher": "HM Treasury",
+    "sourceClass": "official-guidance",
+    "jurisdiction": "United Kingdom",
+    "checkedOn": "2026-08-21",
+    "statusCaveat": "Treasury guidance on public-money stewardship; it is not substituted for legislation or Parliamentary authority."
+  },
+  {
+    "id": "source:nao-about",
+    "title": "About us: National Audit Office",
+    "url": "https://www.nao.org.uk/about-us/",
+    "publisher": "National Audit Office",
+    "sourceClass": "official-role-page",
+    "jurisdiction": "United Kingdom",
+    "checkedOn": "2026-08-21",
+    "statusCaveat": "The NAO audits and examines value for money; it does not set the policy objectives it examines."
+  },
+  {
+    "id": "source:ni-act-1998",
+    "title": "Northern Ireland Act 1998",
+    "url": "https://www.legislation.gov.uk/ukpga/1998/47/contents",
+    "publisher": "The National Archives",
+    "sourceClass": "legislation",
+    "jurisdiction": "Northern Ireland",
+    "checkedOn": "2026-08-21",
+    "statusCaveat": "Check commencement, amendments, outstanding effects and the operation of the institutions."
+  },
+  {
+    "id": "source:nipso-complaints",
+    "title": "Making a complaint",
+    "url": "https://www.nipso.org.uk/make-complaint/how-make-complaint",
+    "publisher": "Northern Ireland Public Services Ombudsman",
+    "sourceClass": "official-procedure",
+    "jurisdiction": "Northern Ireland",
+    "checkedOn": "2026-08-21",
+    "statusCaveat": "Scope, prior complaint steps and time limits must be checked for the body and matter."
+  },
+  {
+    "id": "source:obr-legislation",
+    "title": "Legislation and related material",
+    "url": "https://obr.uk/about-the-obr/legislation-and-related-material/",
+    "publisher": "Office for Budget Responsibility",
+    "sourceClass": "official-role-page",
+    "jurisdiction": "United Kingdom",
+    "checkedOn": "2026-08-21",
+    "statusCaveat": "Read with the current legislation and charter; forecasts are not spending or taxing authority."
+  },
+  {
+    "id": "source:parliament-bill-passage",
+    "title": "Passage of a bill",
+    "url": "https://www.parliament.uk/about/how/laws/passage-bill/",
+    "publisher": "UK Parliament",
+    "sourceClass": "official-procedure",
+    "jurisdiction": "United Kingdom",
+    "checkedOn": "2026-08-21",
+    "statusCaveat": "A general route; bill type, procedure and territorial application can alter the path."
+  },
+  {
+    "id": "source:parliament-government-relations",
+    "title": "Parliament and the Government",
+    "url": "https://www.parliament.uk/about/how/role/relations-with-other-institutions/parliament-government/",
+    "publisher": "UK Parliament",
+    "sourceClass": "official-role-page",
+    "jurisdiction": "United Kingdom",
+    "checkedOn": "2026-08-21",
+    "statusCaveat": "A high-level account of distinct institutions and accountability."
+  },
+  {
+    "id": "source:parliament-how-laws-made",
+    "title": "How are laws made?",
+    "url": "https://www.parliament.uk/about/how/laws/",
+    "publisher": "UK Parliament",
+    "sourceClass": "official-procedure",
+    "jurisdiction": "United Kingdom",
+    "checkedOn": "2026-08-21",
+    "statusCaveat": "A high-level UK Parliament account; devolved legislation has separate routes."
+  },
+  {
+    "id": "source:parliament-spending-taxation",
+    "title": "Checking and approving Government spending and taxation",
+    "url": "https://www.parliament.uk/about/how/role/check-and-approve-government-spending-and-taxation/",
+    "publisher": "UK Parliament",
+    "sourceClass": "official-procedure",
+    "jurisdiction": "United Kingdom",
+    "checkedOn": "2026-08-21",
+    "statusCaveat": "A high-level account; individual taxes, Estimates and funds have specific legal routes."
+  },
+  {
+    "id": "source:phso-complaints",
+    "title": "Making a complaint",
+    "url": "https://www.ombudsman.org.uk/making-complaint",
+    "publisher": "Parliamentary and Health Service Ombudsman",
+    "sourceClass": "official-procedure",
+    "jurisdiction": "United Kingdom",
+    "checkedOn": "2026-08-21",
+    "statusCaveat": "Jurisdiction, prior complaint steps and the Parliamentary route must be checked for the matter."
+  },
+  {
+    "id": "source:public-accounts-committee",
+    "title": "Committee of Public Accounts: role",
+    "url": "https://committees.parliament.uk/committee/127/public-accounts-committee/role/",
+    "publisher": "UK Parliament",
+    "sourceClass": "official-role-page",
+    "jurisdiction": "United Kingdom",
+    "checkedOn": "2026-08-21",
+    "statusCaveat": "Committee membership and inquiry work change; no person-level data is imported."
+  },
+  {
+    "id": "source:psow-complaints",
+    "title": "How to complain",
+    "url": "https://www.ombudsman.wales/how-to-complain/",
+    "publisher": "Public Services Ombudsman for Wales",
+    "sourceClass": "official-procedure",
+    "jurisdiction": "Wales",
+    "checkedOn": "2026-08-21",
+    "statusCaveat": "Scope, prior complaint steps and time limits must be checked for the body and matter."
+  },
+  {
+    "id": "source:scotland-act-1998",
+    "title": "Scotland Act 1998",
+    "url": "https://www.legislation.gov.uk/ukpga/1998/46/contents",
+    "publisher": "The National Archives",
+    "sourceClass": "legislation",
+    "jurisdiction": "Scotland",
+    "checkedOn": "2026-08-21",
+    "statusCaveat": "Competence depends on the Act as amended, including reservations and restrictions; topic labels are insufficient."
+  },
+  {
+    "id": "source:service-standard",
+    "title": "Service Standard",
+    "url": "https://www.gov.uk/service-manual/service-standard",
+    "publisher": "Government Digital Service",
+    "sourceClass": "official-guidance",
+    "jurisdiction": "United Kingdom",
+    "checkedOn": "2026-08-21",
+    "statusCaveat": "A service-design standard, not legal authority or a guarantee that every public service uses the same stack."
+  },
+  {
+    "id": "source:spso-complaints",
+    "title": "How to complain about a public service",
+    "url": "https://www.spso.org.uk/how-to-complain-about-public-service",
+    "publisher": "Scottish Public Services Ombudsman",
+    "sourceClass": "official-procedure",
+    "jurisdiction": "Scotland",
+    "checkedOn": "2026-08-21",
+    "statusCaveat": "Scope, prior complaint steps and time limits must be checked for the body and matter."
+  },
+  {
+    "id": "source:statutory-instruments-act-1946",
+    "title": "Statutory Instruments Act 1946",
+    "url": "https://www.legislation.gov.uk/ukpga/Geo6/9-10/36/contents",
+    "publisher": "The National Archives",
+    "sourceClass": "legislation",
+    "jurisdiction": "United Kingdom",
+    "checkedOn": "2026-08-21",
+    "statusCaveat": "Read with the enabling Act, current procedure and amendments."
+  },
+  {
+    "id": "source:supply-estimates-guidance",
+    "title": "Supply Estimates: guidance manual",
+    "url": "https://www.gov.uk/government/publications/supply-estimates-guidance-manual",
+    "publisher": "HM Treasury",
+    "sourceClass": "official-guidance",
+    "jurisdiction": "United Kingdom",
+    "checkedOn": "2026-08-21",
+    "statusCaveat": "Treasury guidance on the Estimates process; Parliamentary and statutory authority remain separate."
+  },
+  {
+    "id": "source:technology-code-practice",
+    "title": "Technology Code of Practice",
+    "url": "https://www.gov.uk/guidance/the-technology-code-of-practice",
+    "publisher": "Central Digital and Data Office",
+    "sourceClass": "official-guidance",
+    "jurisdiction": "United Kingdom",
+    "checkedOn": "2026-08-21",
+    "statusCaveat": "Technology guidance; it neither transfers competence nor authorises a decision."
+  },
+  {
+    "id": "source:uk-government-organisations",
+    "title": "Departments, agencies and public bodies",
+    "url": "https://www.gov.uk/government/organisations",
+    "publisher": "Government Digital Service",
+    "sourceClass": "official-data-service",
+    "jurisdiction": "United Kingdom",
+    "checkedOn": "2026-08-21",
+    "statusCaveat": "The live directory changes; this atlas does not freeze a body count or infer legal powers from directory placement."
+  },
+  {
+    "id": "source:wales-act-2006",
+    "title": "Government of Wales Act 2006",
+    "url": "https://www.legislation.gov.uk/ukpga/2006/32/contents",
+    "publisher": "The National Archives",
+    "sourceClass": "legislation",
+    "jurisdiction": "Wales",
+    "checkedOn": "2026-08-21",
+    "statusCaveat": "Competence depends on the Act as amended, including reservations and restrictions; topic labels are insufficient."
+  },
+  {
+    "id": "source:bank-england-about",
+    "title": "About the Bank of England",
+    "url": "https://www.bankofengland.co.uk/about",
+    "publisher": "Bank of England",
+    "sourceClass": "official-role-page",
+    "jurisdiction": "United Kingdom",
+    "checkedOn": "2026-08-21",
+    "statusCaveat": "An institutional role description; statutory objectives and powers must be read in current legislation."
+  },
+  {
+    "id": "source:bank-england-act-1998",
+    "title": "Bank of England Act 1998",
+    "url": "https://www.legislation.gov.uk/ukpga/1998/11/contents",
+    "publisher": "The National Archives",
+    "sourceClass": "legislation",
+    "jurisdiction": "United Kingdom",
+    "checkedOn": "2026-08-21",
+    "statusCaveat": "Check commencement, amendments and outstanding effects on the legislation record."
+  },
+  {
+    "id": "source:bank-england-payment-settlement",
+    "title": "Payment and settlement",
+    "url": "https://www.bankofengland.co.uk/payments/payment-settlement",
+    "publisher": "Bank of England",
+    "sourceClass": "official-data-service",
+    "jurisdiction": "United Kingdom",
+    "checkedOn": "2026-08-21",
+    "statusCaveat": "Operational payment infrastructure is not Parliamentary Supply, appropriation, tax authority or a retail account service from this atlas."
+  },
+  {
+    "id": "source:budget-responsibility-national-audit-act-2011",
+    "title": "Budget Responsibility and National Audit Act 2011",
+    "url": "https://www.legislation.gov.uk/ukpga/2011/4/contents",
+    "publisher": "The National Archives",
+    "sourceClass": "legislation",
+    "jurisdiction": "United Kingdom",
+    "checkedOn": "2026-08-21",
+    "statusCaveat": "Check commencement, amendments and outstanding effects on the legislation record."
+  },
+  {
+    "id": "source:commissioners-revenue-customs-act-2005",
+    "title": "Commissioners for Revenue and Customs Act 2005",
+    "url": "https://www.legislation.gov.uk/ukpga/2005/11/contents",
+    "publisher": "The National Archives",
+    "sourceClass": "legislation",
+    "jurisdiction": "United Kingdom",
+    "checkedOn": "2026-08-21",
+    "statusCaveat": "Functions, information duties and later amendments must be checked for the exact matter."
+  },
+  {
+    "id": "source:constitutional-reform-act-2005",
+    "title": "Constitutional Reform Act 2005",
+    "url": "https://www.legislation.gov.uk/ukpga/2005/4/contents",
+    "publisher": "The National Archives",
+    "sourceClass": "legislation",
+    "jurisdiction": "United Kingdom",
+    "checkedOn": "2026-08-21",
+    "statusCaveat": "Check commencement, amendments, territorial application and outstanding effects."
+  },
+  {
+    "id": "source:constitutional-reform-governance-act-2010",
+    "title": "Constitutional Reform and Governance Act 2010, Part 1",
+    "url": "https://www.legislation.gov.uk/ukpga/2010/25/part/1",
+    "publisher": "The National Archives",
+    "sourceClass": "legislation",
+    "jurisdiction": "United Kingdom",
+    "checkedOn": "2026-08-21",
+    "statusCaveat": "Read the current Part 1 text, commencement and amendments with the Civil Service Code."
+  },
+  {
+    "id": "source:data-protection-act-2018",
+    "title": "Data Protection Act 2018",
+    "url": "https://www.legislation.gov.uk/ukpga/2018/12/contents",
+    "publisher": "The National Archives",
+    "sourceClass": "legislation",
+    "jurisdiction": "United Kingdom",
+    "checkedOn": "2026-08-21",
+    "statusCaveat": "Data protection obligations depend on role, purpose, lawful basis and current UK GDPR interaction; this atlas processes no personal data."
+  },
+  {
+    "id": "source:english-devolution-act-2026",
+    "title": "English Devolution and Community Empowerment Act 2026",
+    "url": "https://www.legislation.gov.uk/ukpga/2026/23/contents",
+    "publisher": "The National Archives",
+    "sourceClass": "legislation",
+    "jurisdiction": "England",
+    "checkedOn": "2026-08-21",
+    "statusCaveat": "New 2026 legislation: commencement, regulations, transitional arrangements and outstanding effects must be checked."
+  },
+  {
+    "id": "source:england-councils",
+    "title": "Understand how your council works",
+    "url": "https://www.gov.uk/understand-how-your-council-works",
+    "publisher": "Ministry of Housing, Communities and Local Government",
+    "sourceClass": "official-role-page",
+    "jurisdiction": "England",
+    "checkedOn": "2026-08-21",
+    "statusCaveat": "This guide is explicitly for England; structures and functions can change through reorganisation and legislation."
+  },
+  {
+    "id": "source:legislation-status-guide",
+    "title": "Understanding legislation",
+    "url": "https://www.legislation.gov.uk/understanding-legislation",
+    "publisher": "The National Archives",
+    "sourceClass": "official-guidance",
+    "jurisdiction": "United Kingdom",
+    "checkedOn": "2026-08-21",
+    "statusCaveat": "A publication and status guide; users must inspect each legislation record for amendments and outstanding effects."
+  },
+  {
+    "id": "source:ni-local-government",
+    "title": "Local councils",
+    "url": "https://www.nidirect.gov.uk/articles/local-councils",
+    "publisher": "Northern Ireland Executive",
+    "sourceClass": "official-role-page",
+    "jurisdiction": "Northern Ireland",
+    "checkedOn": "2026-08-21",
+    "statusCaveat": "Northern Ireland-only description; functions and boundaries depend on current legislation and arrangements."
+  },
+  {
+    "id": "source:ogl-v3",
+    "title": "Open Government Licence for public sector information, version 3.0",
+    "url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "publisher": "The National Archives",
+    "sourceClass": "official-rights-terms",
+    "jurisdiction": "United Kingdom",
+    "checkedOn": "2026-08-21",
+    "statusCaveat": "Coverage is not automatic: exclusions include personal data, logos, third-party rights and other listed material; the licence prohibits implied official status or endorsement."
+  },
+  {
+    "id": "source:ons-about",
+    "title": "What we do: Office for National Statistics",
+    "url": "https://www.ons.gov.uk/aboutus/whatwedo",
+    "publisher": "Office for National Statistics",
+    "sourceClass": "official-role-page",
+    "jurisdiction": "United Kingdom",
+    "checkedOn": "2026-08-21",
+    "statusCaveat": "Statistical releases carry their own methods, revisions, quality and geographic coverage."
+  },
+  {
+    "id": "source:parliament-crown",
+    "title": "Parliament and Crown",
+    "url": "https://www.parliament.uk/about/how/role/relations-with-other-institutions/parliament-crown/",
+    "publisher": "UK Parliament",
+    "sourceClass": "official-role-page",
+    "jurisdiction": "United Kingdom",
+    "checkedOn": "2026-08-21",
+    "statusCaveat": "A high-level constitutional description; current monarch and officeholder details are not imported."
+  },
+  {
+    "id": "source:parliament-sovereignty",
+    "title": "Parliament's authority",
+    "url": "https://www.parliament.uk/about/how/sovereignty/",
+    "publisher": "UK Parliament",
+    "sourceClass": "official-role-page",
+    "jurisdiction": "United Kingdom",
+    "checkedOn": "2026-08-21",
+    "statusCaveat": "A high-level account of a complex constitutional principle; it is not a substitute for law or legal analysis."
+  },
+  {
+    "id": "source:payment-systems-regulator-role",
+    "title": "Who we regulate",
+    "url": "https://www.psr.org.uk/how-we-regulate/who-we-regulate/",
+    "publisher": "Payment Systems Regulator",
+    "sourceClass": "official-role-page",
+    "jurisdiction": "United Kingdom",
+    "checkedOn": "2026-08-21",
+    "statusCaveat": "Regulatory remit is separate from operating a payment system, authorising public spending or determining an individual payment dispute."
+  },
+  {
+    "id": "source:scotland-local-government",
+    "title": "Local government",
+    "url": "https://www.gov.scot/policies/local-government/",
+    "publisher": "Scottish Government",
+    "sourceClass": "official-role-page",
+    "jurisdiction": "Scotland",
+    "checkedOn": "2026-08-21",
+    "statusCaveat": "Scotland-only description; local functions and finance depend on current Scottish legislation and arrangements."
+  },
+  {
+    "id": "source:statistics-registration-act-2007",
+    "title": "Statistics and Registration Service Act 2007",
+    "url": "https://www.legislation.gov.uk/ukpga/2007/18/contents",
+    "publisher": "The National Archives",
+    "sourceClass": "legislation",
+    "jurisdiction": "United Kingdom",
+    "checkedOn": "2026-08-21",
+    "statusCaveat": "Check commencement, amendments and the exact scope of official-statistics duties."
+  },
+  {
+    "id": "source:uk-statistics-authority-about",
+    "title": "About the UK Statistics Authority",
+    "url": "https://uksa.statisticsauthority.gov.uk/about-the-authority/",
+    "publisher": "UK Statistics Authority",
+    "sourceClass": "official-role-page",
+    "jurisdiction": "United Kingdom",
+    "checkedOn": "2026-08-21",
+    "statusCaveat": "Institutional role description; individual statistics retain their own methods, revisions and quality limits."
+  },
+  {
+    "id": "source:uk-supreme-court-about",
+    "title": "About the Supreme Court",
+    "url": "https://www.supremecourt.uk/about-the-court",
+    "publisher": "Supreme Court of the United Kingdom",
+    "sourceClass": "official-role-page",
+    "jurisdiction": "United Kingdom",
+    "checkedOn": "2026-08-21",
+    "statusCaveat": "Jurisdiction and appeal routes are statutory and vary by originating legal system and matter."
+  },
+  {
+    "id": "source:wales-local-government",
+    "title": "Local government",
+    "url": "https://www.gov.wales/local-government",
+    "publisher": "Welsh Government",
+    "sourceClass": "official-role-page",
+    "jurisdiction": "Wales",
+    "checkedOn": "2026-08-21",
+    "statusCaveat": "Wales-only description; local functions and finance depend on current Welsh legislation and arrangements."
+  },
+  {
+    "id": "source:nao-cag-comptroller",
+    "title": "Who we are and what we do",
+    "url": "https://www.nao.org.uk/about-us/foi/publication-scheme/who-we-are-and-what-we-do/",
+    "publisher": "National Audit Office",
+    "sourceClass": "official-role-page",
+    "jurisdiction": "United Kingdom",
+    "checkedOn": "2026-08-21",
+    "statusCaveat": "Institutional explanation of the comptroller function; exact authority remains in the cited statutes and must be checked for the fund and issue."
+  },
+  {
+    "id": "source:lgsco-complaints",
+    "title": "Make a complaint",
+    "url": "https://www.lgo.org.uk/how-to-complain",
+    "publisher": "Local Government and Social Care Ombudsman",
+    "sourceClass": "official-procedure",
+    "jurisdiction": "England",
+    "checkedOn": "2026-08-21",
+    "statusCaveat": "Scope, prior complaint steps and time limits must be checked for the body, provider and matter."
+  }
+]

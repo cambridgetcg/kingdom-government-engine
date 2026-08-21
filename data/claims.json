@@ -1,0 +1,466 @@
+[
+  {
+    "id": "claim:authority-crown-government",
+    "text": "The constitutional executive operates through ministers and government under the Crown within legal and conventional limits.",
+    "claimType": "editorial-synthesis",
+    "sourceIds": ["source:cabinet-manual", "source:how-government-works"],
+    "checkedOn": "2026-08-21",
+    "limitation": "This is a system-level synthesis, not a statement about a current officeholder or a justiciable rule in every circumstance."
+  },
+  {
+    "id": "claim:authority-government-parliament-distinct",
+    "text": "Government and Parliament are distinct: government develops and implements policy while Parliament legislates, authorises taxation and spending, and scrutinises government.",
+    "claimType": "source-stated",
+    "sourceIds": ["source:parliament-government-relations", "source:parliament-spending-taxation"],
+    "checkedOn": "2026-08-21",
+    "limitation": "A high-level institutional distinction; individual procedures have more specific rules."
+  },
+  {
+    "id": "claim:authority-election-confidence",
+    "text": "A UK general election returns the House of Commons; the ability to command Commons confidence is central to forming and maintaining a government.",
+    "claimType": "editorial-synthesis",
+    "sourceIds": ["source:cabinet-manual", "source:how-government-works"],
+    "checkedOn": "2026-08-21",
+    "limitation": "Constitutional conventions and exceptional circumstances cannot be reduced to a mechanical election result."
+  },
+  {
+    "id": "claim:authority-ministerial-accountability",
+    "text": "Ministers direct departments and are accountable to Parliament for government policy and administration.",
+    "claimType": "source-stated",
+    "sourceIds": ["source:how-government-works", "source:parliament-government-relations"],
+    "checkedOn": "2026-08-21",
+    "limitation": "Roles vary by department and statute; no current minister is identified."
+  },
+  {
+    "id": "claim:authority-civil-service",
+    "text": "The Home Civil Service supports the government of the day and is bound by statutory management provisions and the code values of integrity, honesty, objectivity and impartiality.",
+    "claimType": "source-stated",
+    "sourceIds": ["source:civil-service-code", "source:constitutional-reform-governance-act-2010"],
+    "checkedOn": "2026-08-21",
+    "limitation": "Northern Ireland has a separate Civil Service; the code does not turn administrative delivery into independent political authority."
+  },
+  {
+    "id": "claim:jurisdiction-scotland",
+    "text": "The Scotland Act establishes the Scottish Parliament and Scottish Government framework and defines legislative competence through reservations and other limits.",
+    "claimType": "source-stated",
+    "sourceIds": ["source:scotland-act-1998"],
+    "checkedOn": "2026-08-21",
+    "limitation": "Competence must be checked against the Act as amended for the exact provision; topic labels are insufficient."
+  },
+  {
+    "id": "claim:jurisdiction-wales",
+    "text": "The Government of Wales Act establishes the Senedd and Welsh Government framework and defines legislative competence through reservations and other limits.",
+    "claimType": "source-stated",
+    "sourceIds": ["source:wales-act-2006"],
+    "checkedOn": "2026-08-21",
+    "limitation": "Competence must be checked against the Act as amended for the exact provision; topic labels are insufficient."
+  },
+  {
+    "id": "claim:jurisdiction-northern-ireland",
+    "text": "The Northern Ireland Act establishes the Assembly and Executive framework and distinguishes transferred, reserved and excepted matters subject to statutory limits.",
+    "claimType": "source-stated",
+    "sourceIds": ["source:ni-act-1998"],
+    "checkedOn": "2026-08-21",
+    "limitation": "Institutional operation and competence must be checked for the date and exact matter."
+  },
+  {
+    "id": "claim:jurisdiction-asymmetric",
+    "text": "Devolution is asymmetric: Scotland, Wales and Northern Ireland have different statutory competence tests, institutions and routes.",
+    "claimType": "editorial-synthesis",
+    "sourceIds": ["source:ni-act-1998", "source:scotland-act-1998", "source:wales-act-2006"],
+    "checkedOn": "2026-08-21",
+    "limitation": "This comparison does not decide competence for any proposal."
+  },
+  {
+    "id": "claim:jurisdiction-local-government",
+    "text": "Local authorities are public bodies with functions set by legislation and territorial arrangements; directory placement alone does not prove a power.",
+    "claimType": "editorial-synthesis",
+    "sourceIds": ["source:england-councils", "source:ni-local-government", "source:scotland-local-government", "source:wales-local-government"],
+    "checkedOn": "2026-08-21",
+    "limitation": "This release does not enumerate councils, functions or local-government statutes across all four nations."
+  },
+  {
+    "id": "claim:law-primary",
+    "text": "Bills pass through parliamentary stages and require Royal Assent before becoming Acts of Parliament.",
+    "claimType": "source-stated",
+    "sourceIds": ["source:parliament-bill-passage", "source:parliament-how-laws-made"],
+    "checkedOn": "2026-08-21",
+    "limitation": "Bill type and procedure vary, and an Act's provisions may commence at different times."
+  },
+  {
+    "id": "claim:law-delegated",
+    "text": "Where delegated legislation is made as a statutory instrument, it depends on power in an enabling Act and follows the route specified by that Act and the applicable statutory-instrument procedure.",
+    "claimType": "editorial-synthesis",
+    "sourceIds": ["source:parliament-how-laws-made", "source:statutory-instruments-act-1946"],
+    "checkedOn": "2026-08-21",
+    "limitation": "Not all delegated legislation uses the same form; the enabling power, procedure, territorial extent, commencement and later amendments must be checked instrument by instrument."
+  },
+  {
+    "id": "claim:law-guidance-distinct",
+    "text": "Codes, manuals, standards and service guidance describe conduct or practice but are not silently treated as Acts or delegated legislation in this atlas.",
+    "claimType": "editorial-synthesis",
+    "sourceIds": ["source:cabinet-manual", "source:civil-service-code", "source:service-standard", "source:technology-code-practice"],
+    "checkedOn": "2026-08-21",
+    "limitation": "A particular document may still have legal relevance; this classification is not legal advice."
+  },
+  {
+    "id": "claim:law-judicial-independence",
+    "text": "The Constitutional Reform Act and judiciary guidance protect judicial independence; courts decide disputes, including citizen-versus-state disputes, under law.",
+    "claimType": "source-stated",
+    "sourceIds": ["source:constitutional-reform-act-2005", "source:judicial-independence"],
+    "checkedOn": "2026-08-21",
+    "limitation": "The cited explanatory page is England-and-Wales focused; court structures and routes differ across UK legal jurisdictions."
+  },
+  {
+    "id": "claim:money-parliamentary-authority",
+    "text": "Government needs Parliamentary approval for taxation and for the public spending authorised through Supply and related legislation.",
+    "claimType": "source-stated",
+    "sourceIds": ["source:parliament-spending-taxation"],
+    "checkedOn": "2026-08-21",
+    "limitation": "Specific taxes, Estimates, funds and statutory authorities have distinct procedures."
+  },
+  {
+    "id": "claim:money-treasury-role",
+    "text": "HM Treasury leads economic and public-finance policy and operates spending-control and public-money frameworks.",
+    "claimType": "source-stated",
+    "sourceIds": ["source:hmt-about", "source:managing-public-money-2026"],
+    "checkedOn": "2026-08-21",
+    "limitation": "A role description and guidance do not replace Parliamentary or statutory authority."
+  },
+  {
+    "id": "claim:money-hmrc-role",
+    "text": "HMRC is a non-ministerial department that administers taxes, payments and customs functions within its statutory responsibilities.",
+    "claimType": "source-stated",
+    "sourceIds": ["source:commissioners-revenue-customs-act-2005", "source:hmrc-about"],
+    "checkedOn": "2026-08-21",
+    "limitation": "This does not state a live tax rate, liability, filing result or HMRC endorsement."
+  },
+  {
+    "id": "claim:money-tax-policy-administration",
+    "text": "Strategic tax policy and tax administration are distinct functions: Treasury leads policy while HMRC administers and advises on implementation within its role.",
+    "claimType": "editorial-synthesis",
+    "sourceIds": ["source:hmrc-about", "source:hmt-about"],
+    "checkedOn": "2026-08-21",
+    "limitation": "Exact statutory responsibilities and devolved taxes must be checked separately."
+  },
+  {
+    "id": "claim:money-estimates",
+    "text": "Supply Estimates set out departments' requests for resources and cash for Parliamentary approval; a plan, Estimate, appropriation and outturn are not interchangeable.",
+    "claimType": "editorial-synthesis",
+    "sourceIds": ["source:parliament-spending-taxation", "source:supply-estimates-guidance"],
+    "checkedOn": "2026-08-21",
+    "limitation": "The process includes supplementary and other instruments not exhaustively mapped here."
+  },
+  {
+    "id": "claim:money-consolidated-fund",
+    "text": "The Consolidated Fund is a central account into which public revenues are paid and from which authorised issues are made under the public-finance framework.",
+    "claimType": "editorial-synthesis",
+    "sourceIds": ["source:exchequer-audit-act-1866", "source:government-resources-accounts-act-2000", "source:managing-public-money-2026"],
+    "checkedOn": "2026-08-21",
+    "limitation": "Historic and later statutes interact; this is a map of the authority chain, not accounting advice."
+  },
+  {
+    "id": "claim:money-cag-credit",
+    "text": "The Comptroller and Auditor General's statutory comptroller function concerns the grant of credit for authorised issues from the Consolidated Fund and National Loans Fund.",
+    "claimType": "editorial-synthesis",
+    "sourceIds": ["source:budget-responsibility-national-audit-act-2011", "source:exchequer-audit-act-1866", "source:nao-cag-comptroller"],
+    "checkedOn": "2026-08-21",
+    "limitation": "The exact statutory mechanism and fund must be checked; audit and policy choice remain distinct."
+  },
+  {
+    "id": "claim:money-obr",
+    "text": "The Office for Budget Responsibility provides independent fiscal and economic analysis under its statutory framework; its forecasts do not authorise tax or spending.",
+    "claimType": "editorial-synthesis",
+    "sourceIds": ["source:budget-responsibility-act-2024", "source:obr-legislation"],
+    "checkedOn": "2026-08-21",
+    "limitation": "Forecast requirements and the fiscal framework can change."
+  },
+  {
+    "id": "claim:money-nao",
+    "text": "The National Audit Office supports Parliament by auditing bodies and accounts within its remit and examining value for money, without setting the policy objectives examined.",
+    "claimType": "source-stated",
+    "sourceIds": ["source:budget-responsibility-national-audit-act-2011", "source:nao-about"],
+    "checkedOn": "2026-08-21",
+    "limitation": "Audit scope and statutory access vary by body and engagement."
+  },
+  {
+    "id": "claim:money-pac",
+    "text": "The House of Commons Public Accounts Committee scrutinises value for money, economy, efficiency and effectiveness using evidence that includes National Audit Office work.",
+    "claimType": "editorial-synthesis",
+    "sourceIds": ["source:nao-about", "source:public-accounts-committee"],
+    "checkedOn": "2026-08-21",
+    "limitation": "Committee membership, inquiries and recommendations change over time."
+  },
+  {
+    "id": "claim:money-gbs",
+    "text": "Government Banking Service provides banking and payment services to public-sector customers; that operational rail is separate from legal authority to tax or spend.",
+    "claimType": "editorial-synthesis",
+    "sourceIds": ["source:government-banking-service", "source:parliament-spending-taxation"],
+    "checkedOn": "2026-08-21",
+    "limitation": "No bank account, payment instruction, provider contract or live transaction is exposed."
+  },
+  {
+    "id": "claim:delivery-departments",
+    "text": "Government departments and public bodies develop and deliver policy and services; their directory listing does not by itself establish a particular legal power.",
+    "claimType": "editorial-synthesis",
+    "sourceIds": ["source:how-government-works", "source:uk-government-organisations"],
+    "checkedOn": "2026-08-21",
+    "limitation": "The live organisation directory changes and this release does not claim a complete body inventory."
+  },
+  {
+    "id": "claim:delivery-service-standard",
+    "text": "The GOV.UK Service Standard supplies service-design expectations for government teams.",
+    "claimType": "source-stated",
+    "sourceIds": ["source:service-standard"],
+    "checkedOn": "2026-08-21",
+    "limitation": "A standard is not legal authority, proof of compliance or a universal technology architecture."
+  },
+  {
+    "id": "claim:delivery-one-login",
+    "text": "GOV.UK One Login is a shared sign-in and identity-checking capability for participating government services.",
+    "claimType": "source-stated",
+    "sourceIds": ["source:govuk-one-login"],
+    "checkedOn": "2026-08-21",
+    "limitation": "Sign-in does not establish eligibility, liability or decision authority; this atlas performs no authentication."
+  },
+  {
+    "id": "claim:delivery-notify",
+    "text": "GOV.UK Notify is a shared channel for participating public services to send messages.",
+    "claimType": "source-stated",
+    "sourceIds": ["source:govuk-notify"],
+    "checkedOn": "2026-08-21",
+    "limitation": "This atlas sends no message and stores no contact detail."
+  },
+  {
+    "id": "claim:delivery-pay",
+    "text": "GOV.UK Pay is a shared payment capability for participating public services.",
+    "claimType": "source-stated",
+    "sourceIds": ["source:govuk-pay"],
+    "checkedOn": "2026-08-21",
+    "limitation": "Payment processing is not authority, entitlement or proof of liability; this atlas takes no payment."
+  },
+  {
+    "id": "claim:delivery-forms",
+    "text": "GOV.UK Forms is a shared capability for government teams to create online forms.",
+    "claimType": "source-stated",
+    "sourceIds": ["source:govuk-forms"],
+    "checkedOn": "2026-08-21",
+    "limitation": "This atlas embeds no form, submits no data and does not imply every service uses the product."
+  },
+  {
+    "id": "claim:delivery-api-catalogue",
+    "text": "The GOV.UK API Catalogue helps locate public-sector APIs published into the catalogue.",
+    "claimType": "source-stated",
+    "sourceIds": ["source:govuk-api-catalogue"],
+    "checkedOn": "2026-08-21",
+    "limitation": "Catalogue presence is not a guarantee of availability, fitness, authority or data quality; this build calls no API."
+  },
+  {
+    "id": "claim:delivery-open-data",
+    "text": "data.gov.uk is a discovery service for data published by central government, local authorities and public bodies.",
+    "claimType": "source-stated",
+    "sourceIds": ["source:data-gov-uk"],
+    "checkedOn": "2026-08-21",
+    "limitation": "Each dataset has its own publisher, rights, freshness, coverage and quality limits."
+  },
+  {
+    "id": "claim:delivery-rails-not-authority",
+    "text": "Identity, messaging, payment, forms, APIs and data discovery can carry service interactions but do not themselves confer legal competence or decision authority.",
+    "claimType": "editorial-synthesis",
+    "sourceIds": ["source:data-gov-uk", "source:govuk-api-catalogue", "source:govuk-forms", "source:govuk-notify", "source:govuk-one-login", "source:govuk-pay", "source:technology-code-practice"],
+    "checkedOn": "2026-08-21",
+    "limitation": "The legal basis, controller, eligibility rule and decision-maker must be established for each service."
+  },
+  {
+    "id": "claim:remedy-service-complaint",
+    "text": "HMRC provides a service-complaint route, which is distinct from challenging a tax decision through review or appeal.",
+    "claimType": "editorial-synthesis",
+    "sourceIds": ["source:hmrc-complaints", "source:hmrc-tax-appeals"],
+    "checkedOn": "2026-08-21",
+    "limitation": "The correct route and deadline depend on the issue; starting a complaint may not protect an appeal deadline."
+  },
+  {
+    "id": "claim:remedy-tax-review-appeal",
+    "text": "Some HMRC decisions can be reviewed by HMRC or appealed to the tax tribunal under the applicable rules.",
+    "claimType": "source-stated",
+    "sourceIds": ["source:hmrc-tax-appeals"],
+    "checkedOn": "2026-08-21",
+    "limitation": "Rights, exclusions, payment rules and deadlines vary by decision; this is not tax or legal advice."
+  },
+  {
+    "id": "claim:remedy-tax-tribunal",
+    "text": "The First-tier Tribunal (Tax) hears eligible tax appeals independently of HMRC under its jurisdiction and procedure.",
+    "claimType": "editorial-synthesis",
+    "sourceIds": ["source:first-tier-tax-tribunal", "source:judicial-independence"],
+    "checkedOn": "2026-08-21",
+    "limitation": "Eligibility, form, fee, time limit and onward appeal depend on the matter and current rules."
+  },
+  {
+    "id": "claim:remedy-phso",
+    "text": "The Parliamentary and Health Service Ombudsman investigates eligible complaints about UK government departments and the NHS in England after required prior steps.",
+    "claimType": "source-stated",
+    "sourceIds": ["source:phso-complaints"],
+    "checkedOn": "2026-08-21",
+    "limitation": "Jurisdiction, the Parliamentary route, prior steps and time limits must be checked."
+  },
+  {
+    "id": "claim:remedy-foi",
+    "text": "The Freedom of Information Act creates rights to request recorded information from covered public authorities, subject to its scope and exemptions.",
+    "claimType": "source-stated",
+    "sourceIds": ["source:foia-2000"],
+    "checkedOn": "2026-08-21",
+    "limitation": "Other information regimes, exemptions and territorial rules may apply."
+  },
+  {
+    "id": "claim:remedy-ico",
+    "text": "The Information Commissioner's Office provides a complaint route for eligible concerns about official information after applicable prior steps.",
+    "claimType": "source-stated",
+    "sourceIds": ["source:ico-official-information-complaint"],
+    "checkedOn": "2026-08-21",
+    "limitation": "The information regime, internal review requirement and deadlines must be checked."
+  },
+  {
+    "id": "claim:remedy-judicial-review",
+    "text": "In England and Wales, judicial review is a court procedure for reviewing the lawfulness of public decisions or failures to act; it is not a general merits appeal.",
+    "claimType": "editorial-synthesis",
+    "sourceIds": ["source:civil-procedure-rule-54", "source:judicial-independence"],
+    "checkedOn": "2026-08-21",
+    "limitation": "This route is scoped to England and Wales. Procedure, permission, standing, alternative remedies and strict time limits require current legal advice."
+  },
+  {
+    "id": "claim:remedy-spso",
+    "text": "The Scottish Public Services Ombudsman provides a route for eligible complaints about public services in Scotland.",
+    "claimType": "source-stated",
+    "sourceIds": ["source:spso-complaints"],
+    "checkedOn": "2026-08-21",
+    "limitation": "Jurisdiction, prior complaint steps and time limits must be checked."
+  },
+  {
+    "id": "claim:remedy-psow",
+    "text": "The Public Services Ombudsman for Wales provides a route for eligible complaints about public services in Wales.",
+    "claimType": "source-stated",
+    "sourceIds": ["source:psow-complaints"],
+    "checkedOn": "2026-08-21",
+    "limitation": "Jurisdiction, prior complaint steps and time limits must be checked."
+  },
+  {
+    "id": "claim:remedy-nipso",
+    "text": "The Northern Ireland Public Services Ombudsman provides a route for eligible complaints about public services in Northern Ireland.",
+    "claimType": "source-stated",
+    "sourceIds": ["source:nipso-complaints"],
+    "checkedOn": "2026-08-21",
+    "limitation": "Jurisdiction, prior complaint steps and time limits must be checked."
+  },
+  {
+    "id": "claim:remedy-routes-distinct",
+    "text": "Complaint, statutory review, tribunal appeal, ombudsman referral, information-rights complaint and judicial review are distinct routes, not one automatic ladder.",
+    "claimType": "editorial-synthesis",
+    "sourceIds": ["source:civil-procedure-rule-54", "source:first-tier-tax-tribunal", "source:foia-2000", "source:hmrc-complaints", "source:hmrc-tax-appeals", "source:ico-official-information-complaint", "source:phso-complaints"],
+    "checkedOn": "2026-08-21",
+    "limitation": "Choosing a route and protecting a deadline can require professional advice; this atlas makes no eligibility determination."
+  },
+  {
+    "id": "claim:authority-crown-in-parliament",
+    "text": "The Crown, House of Commons and House of Lords are constituent parts of Parliament; Royal Assent is the Crown's formal agreement to an approved Bill.",
+    "claimType": "source-stated",
+    "sourceIds": ["source:parliament-crown"],
+    "checkedOn": "2026-08-21",
+    "limitation": "The constitutional role is mapped without current monarch details or any inference of personal discretion."
+  },
+  {
+    "id": "claim:authority-parliamentary-sovereignty",
+    "text": "Parliamentary sovereignty is a constitutional principle under which the UK Parliament is the supreme legal authority and can create or end law.",
+    "claimType": "source-stated",
+    "sourceIds": ["source:parliament-sovereignty"],
+    "checkedOn": "2026-08-21",
+    "limitation": "The principle and its interaction with devolution, rights and constitutional law are complex; this atlas offers no legal conclusion for a dispute."
+  },
+  {
+    "id": "claim:law-uk-supreme-court",
+    "text": "The UK Supreme Court is the final court of appeal for eligible civil cases across the UK and eligible criminal cases from England, Wales and Northern Ireland under its jurisdiction.",
+    "claimType": "editorial-synthesis",
+    "sourceIds": ["source:constitutional-reform-act-2005", "source:uk-supreme-court-about"],
+    "checkedOn": "2026-08-21",
+    "limitation": "Jurisdiction, permission and originating legal system must be checked; Scottish criminal cases follow a different final route."
+  },
+  {
+    "id": "claim:jurisdiction-local-four-nations",
+    "text": "Local-government structures and functions are nation-specific: an England guide cannot be applied silently to Scotland, Wales or Northern Ireland.",
+    "claimType": "editorial-synthesis",
+    "sourceIds": ["source:england-councils", "source:ni-local-government", "source:scotland-local-government", "source:wales-local-government"],
+    "checkedOn": "2026-08-21",
+    "limitation": "This release maps four distinct entry points but does not enumerate every council, power, duty or reorganisation."
+  },
+  {
+    "id": "claim:jurisdiction-england-devolution-2026",
+    "text": "The English Devolution and Community Empowerment Act 2026 changes parts of England's devolution and local-government framework through provisions whose commencement and implementation must be checked.",
+    "claimType": "source-stated",
+    "sourceIds": ["source:english-devolution-act-2026"],
+    "checkedOn": "2026-08-21",
+    "limitation": "A newly enacted provision is not assumed commenced or implemented merely because it appears in the Act."
+  },
+  {
+    "id": "claim:money-bank-england",
+    "text": "The Bank of England has statutory and institutional monetary and financial-stability roles that remain distinct from Treasury fiscal policy, Parliamentary Supply and HMRC tax administration.",
+    "claimType": "editorial-synthesis",
+    "sourceIds": ["source:bank-england-about", "source:bank-england-act-1998", "source:hmrc-about", "source:hmt-about", "source:parliament-spending-taxation"],
+    "checkedOn": "2026-08-21",
+    "limitation": "This atlas does not model monetary-policy decisions, rates, prudential rules or individual financial regulation."
+  },
+  {
+    "id": "claim:money-rtgs-chaps",
+    "text": "The Bank of England operates RTGS for settlement in central-bank money and operates CHAPS; these payment-system rails are distinct from the public-spending authority chain.",
+    "claimType": "editorial-synthesis",
+    "sourceIds": ["source:bank-england-payment-settlement", "source:parliament-spending-taxation"],
+    "checkedOn": "2026-08-21",
+    "limitation": "This is a system boundary, not access to RTGS, CHAPS, a bank account or transaction execution."
+  },
+  {
+    "id": "claim:money-payment-regulator",
+    "text": "The Payment Systems Regulator regulates designated payment systems within its remit; regulation, operation and settlement are distinct roles.",
+    "claimType": "editorial-synthesis",
+    "sourceIds": ["source:bank-england-payment-settlement", "source:payment-systems-regulator-role"],
+    "checkedOn": "2026-08-21",
+    "limitation": "The atlas does not determine regulatory jurisdiction or resolve an individual payment complaint."
+  },
+  {
+    "id": "claim:delivery-legislation-status",
+    "text": "A legislation.gov.uk record can distinguish original and revised text and signal outstanding effects; a contents link alone does not prove that every provision is in force or fully updated.",
+    "claimType": "source-stated",
+    "sourceIds": ["source:legislation-status-guide"],
+    "checkedOn": "2026-08-21",
+    "limitation": "The current status, amendments, commencement and territorial extent must be checked on the exact provision."
+  },
+  {
+    "id": "claim:delivery-source-rights",
+    "text": "The Open Government Licence permits reuse of information expressly made available under it subject to conditions and exclusions, and does not permit implied official status or endorsement.",
+    "claimType": "source-stated",
+    "sourceIds": ["source:ogl-v3"],
+    "checkedOn": "2026-08-21",
+    "limitation": "This atlas is link-only for official sources and does not assume every linked item or component is covered by OGL."
+  },
+  {
+    "id": "claim:delivery-official-statistics",
+    "text": "The UK Statistics Authority and Office for National Statistics operate within the statutory official-statistics system; published statistics retain methods, revisions and quality limits.",
+    "claimType": "editorial-synthesis",
+    "sourceIds": ["source:ons-about", "source:statistics-registration-act-2007", "source:uk-statistics-authority-about"],
+    "checkedOn": "2026-08-21",
+    "limitation": "Official-statistics designation is not inferred for an arbitrary dataset, and no statistic is imported into this release."
+  },
+  {
+    "id": "claim:delivery-data-law",
+    "text": "A public-service data flow must establish its own legal roles, purpose and safeguards; a shared API or identity product does not supply that basis.",
+    "claimType": "editorial-synthesis",
+    "sourceIds": ["source:data-protection-act-2018", "source:govuk-api-catalogue", "source:govuk-one-login", "source:technology-code-practice"],
+    "checkedOn": "2026-08-21",
+    "limitation": "This public snapshot and runtime collect no personal data and make no determination of a controller, processor or lawful basis. Exact vendor captures have the separate scope documented in NOTICE."
+  },
+  {
+    "id": "claim:remedy-lgsco",
+    "text": "The Local Government and Social Care Ombudsman provides a route for eligible complaints about councils and certain services in England within its remit.",
+    "claimType": "source-stated",
+    "sourceIds": ["source:lgsco-complaints"],
+    "checkedOn": "2026-08-21",
+    "limitation": "Jurisdiction, provider coverage, prior complaint steps and time limits must be checked."
+  }
+]
